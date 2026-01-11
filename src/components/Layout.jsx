@@ -31,6 +31,17 @@ export default function Layout() {
     return () => observer.disconnect();
   }, [location.pathname]);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (typeof window.gtag !== "function") return;
+    const pagePath = location.pathname + location.search;
+    const pageTitle = document.title;
+    window.gtag("config", "G-JP295JCT48", {
+      page_path: pagePath,
+      page_title: pageTitle,
+    });
+  }, [location.pathname, location.search]);
+
   return (
     <>
       <div className="bg-noise"></div>
