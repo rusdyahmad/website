@@ -14,7 +14,17 @@ const routes = [
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const distDir = resolve(__dirname, "..", "dist");
 const ssrDir = resolve(__dirname, "..", "dist-ssr");
-const template = await readFile(resolve(distDir, "index.html"), "utf8");
+const templateRaw = await readFile(resolve(distDir, "index.html"), "utf8");
+
+function stripHeadTags(html) {
+  return html
+    .replace(/<title>.*?<\/title>/s, "")
+    .replace(/<meta[^>]*name=["']description["'][^>]*>\s*/gi, "")
+    .replace(/<meta[^>]*property=["']og:[^"']+["'][^>]*>\s*/gi, "")
+    .replace(/<meta[^>]*name=["']twitter:[^"']+["'][^>]*>\s*/gi, "");
+}
+
+const template = stripHeadTags(templateRaw);
 
 const ssrEntry = pathToFileURL(resolve(ssrDir, "entry-server.js")).href;
 const { render } = await import(ssrEntry);
