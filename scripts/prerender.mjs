@@ -13,9 +13,10 @@ const routes = [
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const distDir = resolve(__dirname, "..", "dist");
+const ssrDir = resolve(__dirname, "..", "dist-ssr");
 const template = await readFile(resolve(distDir, "index.html"), "utf8");
 
-const ssrEntry = pathToFileURL(resolve(distDir, "server", "entry-server.js")).href;
+const ssrEntry = pathToFileURL(resolve(ssrDir, "entry-server.js")).href;
 const { render } = await import(ssrEntry);
 
 function injectHead(html, helmet) {
