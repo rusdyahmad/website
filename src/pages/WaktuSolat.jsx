@@ -29,7 +29,14 @@ export default function WaktuSolat() {
 
   return (
     <>
-      <SEO title={title} description={description} path="/waktusolat" type="article" jsonLd={jsonLd} />
+      <SEO
+        title={title}
+        description={description}
+        path="/waktusolat"
+        type="article"
+        image="/waktusolat/splash.jpg"
+        jsonLd={jsonLd}
+      />
       <section className="case-hero reveal">
         <div className="container case-hero-inner">
           <div>
