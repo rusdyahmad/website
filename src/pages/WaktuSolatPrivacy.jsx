@@ -3,7 +3,7 @@ import SEO from "../components/SEO.jsx";
 export default function WaktuSolatPrivacy() {
   const title = "Waktu Solat — Privacy Policy";
   const description =
-    "Privacy policy for the Waktu Solat app. Learn how data is used for prayer times, location, and notifications.";
+    "Privacy policy for Waktu Solat covering data collection, local storage, permissions, and user choices.";
 
   return (
     <>
@@ -27,59 +27,70 @@ export default function WaktuSolatPrivacy() {
           </a>
           <p className="eyebrow">Policy</p>
           <h1>Privacy Policy</h1>
-          <p className="lead">Effective date: January 11, 2026</p>
+          <p className="lead">Last updated: January 12, 2026</p>
 
           <p>
-            This Privacy Policy explains how Waktu Solat (“we”, “our”, “us”) handles information when you
-            use the Waktu Solat mobile application.
+            Waktu Solat (“the App”) respects your privacy. This policy explains what data we collect, how we
+            use it, and your choices.
           </p>
 
-          <h2>Information we use</h2>
+          <h2>1) Information We Collect</h2>
           <ul>
             <li>
-              <strong>Location (optional):</strong> Used to determine your prayer time zone and Qiblah
-              direction. You can choose a zone manually if you prefer not to share location.
+              <strong>Location (optional):</strong> If you choose “Use my current location,” we access your
+              device’s location to detect the correct prayer zone.
             </li>
             <li>
-              <strong>Notification settings:</strong> Used to schedule prayer time reminders on your device.
+              <strong>App preferences:</strong> Selected prayer zone, language, and notification settings.
             </li>
             <li>
-              <strong>App preferences:</strong> Language, time format, and zone settings stored on your device.
+              <strong>Notification data:</strong> Scheduled prayer time notifications and related settings.
             </li>
           </ul>
-
-          <h2>Data storage</h2>
           <p>
-            Waktu Solat stores preferences and prayer schedule data locally on your device to power widgets
-            and reminders. We do not sell your data.
+            We do not collect names, emails, phone numbers, contacts, or advertising identifiers.
           </p>
 
-          <h2>Third-party services</h2>
-          <p>
-            Prayer times are fetched from the official Malaysia e-Solat API. We do not share your personal
-            data with third parties beyond what is required to fetch prayer time schedules.
-          </p>
-
-          <h2>Permissions</h2>
+          <h2>2) How We Use Information</h2>
           <ul>
-            <li><strong>Location:</strong> For zone detection and Qiblah calculation.</li>
-            <li><strong>Notifications:</strong> For prayer time reminders.</li>
+            <li>To detect your prayer zone (location is used only when you request it).</li>
+            <li>To calculate and display prayer times.</li>
+            <li>To schedule prayer notifications and reminders.</li>
           </ul>
 
-          <h2>Children’s privacy</h2>
+          <h2>3) Data Storage</h2>
+          <ul>
+            <li>Your data is stored locally on your device (zone, settings, cached prayer times).</li>
+            <li>We do not upload or share your data with any third parties.</li>
+          </ul>
+
+          <h2>4) Permissions</h2>
+          <ul>
+            <li><strong>Location (foreground):</strong> Used only for zone detection when you request it.</li>
+            <li><strong>Notifications:</strong> Used to show prayer reminders.</li>
+            <li><strong>Exact alarms (Android):</strong> Used to deliver time-critical prayer notifications.</li>
+          </ul>
+
+          <h2>5) Data Sharing</h2>
+          <p>We do not sell, rent, or share your data with third parties.</p>
+
+          <h2>6) Data Retention &amp; Deletion</h2>
+          <p>Data stays on your device until you clear app data or uninstall the app.</p>
+
+          <h2>7) Children’s Privacy</h2>
           <p>
-            Waktu Solat is not directed to children under 13. If you believe a child has provided personal
-            information, please contact us and we will delete it.
+            The App is not directed to children under 13, and we do not knowingly collect personal data from
+            children.
           </p>
 
-          <h2>Changes to this policy</h2>
-          <p>
-            We may update this policy from time to time. Updates will be posted on this page with a revised
-            effective date.
-          </p>
+          <h2>8) Changes to This Policy</h2>
+          <p>We may update this policy. Any changes will be reflected in the updated date above.</p>
 
           <h2>Contact</h2>
-          <p>If you have questions, contact: rusdyahmad@gmail.com</p>
+          <p>If you have questions, contact:</p>
+          <p>Rusdy Ahmad</p>
+          <p>Email: rusdyahmad@gmail.com</p>
+          <p>Website: https://rusdy.com/waktusolat</p>
         </div>
       </section>
     </>

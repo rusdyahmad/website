@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "../lib/helmet.js";
 
 export default function SEO({
   title,
