@@ -19,8 +19,8 @@ const workItems = [
     description:
       "All-in-one form builder + checkout for products, bookings, and digital goods with a live dashboard for revenue, orders, and customers.",
     tags: ["Checkout", "Forms", "Dashboard"],
-    href: "https://sini.my/",
-    linkLabel: "Visit website",
+    href: "/sini",
+    linkLabel: "Case study",
     image: "/projects/sini/sini.png",
   },
   {
@@ -55,15 +55,7 @@ export default function Home() {
       addressLocality: "Malacca",
       addressCountry: "MY",
     },
-    knowsAbout: [
-      "Laravel",
-      "Inertia.js",
-      "React",
-      "PostgreSQL",
-      "MySQL",
-      "Expo",
-      "React Native",
-    ],
+    knowsAbout: ["Laravel", "Inertia.js", "React", "PostgreSQL", "MySQL", "Expo", "React Native"],
   };
 
   return (
@@ -75,8 +67,8 @@ export default function Home() {
             <p className="eyebrow">Full-Stack Coder</p>
             <h1>Building fast, reliable products from database to pixel.</h1>
             <p className="lead">
-              I ship full-stack web apps with clean architecture, scalable APIs, and polished UI when it
-              matters. I also build Android & iOS apps with Expo.
+              I ship full-stack web apps with clean architecture, scalable APIs, and polished UI
+              when it matters. I also build Android & iOS apps with Expo.
             </p>
             <div className="hero-actions">
               <a className="btn" href="#work">
@@ -130,7 +122,10 @@ export default function Home() {
           </div>
           <div className="work-grid">
             {workItems.map((item) => (
-              <div className={`work-item${item.layout === "split" ? " split" : ""}`} key={item.title}>
+              <div
+                className={`work-item${item.layout === "split" ? " split" : ""}`}
+                key={item.title}
+              >
                 {item.image ? (
                   <div className="work-image">
                     <img src={item.image} alt={`${item.title} screenshot`} loading="lazy" />
@@ -176,7 +171,10 @@ export default function Home() {
           <div className="service-grid">
             <article>
               <h3>Backend + APIs</h3>
-              <p>Laravel apps, secure auth, integrations, and Postgres/MySQL databases built to scale.</p>
+              <p>
+                Laravel apps, secure auth, integrations, and Postgres/MySQL databases built to
+                scale.
+              </p>
             </article>
             <article>
               <h3>Inertia + React</h3>
@@ -196,8 +194,9 @@ export default function Home() {
             <p className="eyebrow">About</p>
             <h2>Full-stack builder who sweats the details.</h2>
             <p>
-              I build production-ready web apps with Laravel, Inertia, and React, plus mobile apps with
-              Expo. When design is needed, I keep it clean, purposeful, and aligned with the product goals.
+              I build production-ready web apps with Laravel, Inertia, and React, plus mobile apps
+              with Expo. When design is needed, I keep it clean, purposeful, and aligned with the
+              product goals.
             </p>
             <div className="about-stats">
               <div className="stat">
@@ -242,7 +241,10 @@ export default function Home() {
           </div>
           <div className="testimonial-grid">
             <article>
-              <p>“RA delivered a site that felt like our brand overnight. Clean, confident, and sharp.”</p>
+              <p>
+                “RA delivered a site that felt like our brand overnight. Clean, confident, and
+                sharp.”
+              </p>
               <span>— Studio North</span>
             </article>
             <article>

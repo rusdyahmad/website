@@ -29,15 +29,15 @@ export default function WaktuSolatTerms() {
           <p className="lead">Effective date: January 11, 2026</p>
 
           <p>
-            By using the Waktu Solat app, you agree to these Terms of Service. If you do not agree, please
-            do not use the app.
+            By using the Waktu Solat app, you agree to these Terms of Service. If you do not agree,
+            please do not use the app.
           </p>
 
           <h2>Use of the app</h2>
           <p>
-            Waktu Solat provides prayer time information and related utilities. The app is provided “as is”
-            without warranties of any kind. While we strive for accuracy, prayer times may vary by source
-            and location settings.
+            Waktu Solat provides prayer time information and related utilities. The app is provided
+            “as is” without warranties of any kind. While we strive for accuracy, prayer times may
+            vary by source and location settings.
           </p>
 
           <h2>Acceptable use</h2>
@@ -48,19 +48,17 @@ export default function WaktuSolatTerms() {
 
           <h2>Intellectual property</h2>
           <p>
-            All trademarks, logos, and content in the app are owned by their respective owners. You may not
-            use them without permission.
+            All trademarks, logos, and content in the app are owned by their respective owners. You
+            may not use them without permission.
           </p>
 
           <h2>Limitation of liability</h2>
-          <p>
-            We are not liable for any damages arising from the use or inability to use the app.
-          </p>
+          <p>We are not liable for any damages arising from the use or inability to use the app.</p>
 
           <h2>Changes to these terms</h2>
           <p>
-            We may update these terms from time to time. Updates will be posted on this page with a revised
-            effective date.
+            We may update these terms from time to time. Updates will be posted on this page with a
+            revised effective date.
           </p>
 
           <h2>Contact</h2>

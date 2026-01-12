@@ -9,7 +9,13 @@ export function render(url) {
   const helmetContext = {};
   const app = renderToString(
     <HelmetProvider context={helmetContext}>
-      <StaticRouter location={url}>
+      <StaticRouter
+        location={url}
+        future={{
+          v7_startTransition: true,
+          v7_relativeSplatPath: true,
+        }}
+      >
         <App />
       </StaticRouter>
     </HelmetProvider>

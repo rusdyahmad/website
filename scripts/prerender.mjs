@@ -4,6 +4,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const routes = [
   "/",
+  "/sini",
   "/waktusolat",
   "/waktusolat/privacy",
   "/waktusolat/terms",
@@ -43,7 +44,7 @@ function injectHead(html, helmet) {
 
 for (const route of routes) {
   const { app, helmet } = render(route);
-  let html = template.replace("<div id=\"root\"></div>", `<div id=\"root\">${app}</div>`);
+  let html = template.replace('<div id="root"></div>', `<div id="root">${app}</div>`);
   html = injectHead(html, helmet);
 
   const outPath = route === "/"

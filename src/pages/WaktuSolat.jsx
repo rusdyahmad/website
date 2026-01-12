@@ -43,8 +43,8 @@ export default function WaktuSolat() {
             <p className="eyebrow">Latest project</p>
             <h1>Waktu Solat</h1>
             <p className="lead">
-              A Malaysia prayer time app built with Expo and React Native. It delivers accurate prayer
-              times, Qiblah direction, reminders, and home-screen widgets that stay in sync.
+              A Malaysia prayer time app built with Expo and React Native. It delivers accurate
+              prayer times, Qiblah direction, reminders, and home-screen widgets that stay in sync.
             </p>
             <div className="case-meta">
               <div>
@@ -128,7 +128,11 @@ export default function WaktuSolat() {
           <div className="phone-grid">
             {[1, 2, 3, 4].map((num) => (
               <div className="phone-shot" key={num}>
-                <img src={`/waktusolat/${num}.png`} alt={`Waktu Solat screen ${num}`} loading="lazy" />
+                <img
+                  src={`/waktusolat/${num}.png`}
+                  alt={`Waktu Solat screen ${num}`}
+                  loading="lazy"
+                />
               </div>
             ))}
           </div>

@@ -40,8 +40,8 @@ export default function WaktuSolatSupport() {
 
           <h2>Feedback</h2>
           <p>
-            If you have suggestions or bug reports, please email with your device model, OS version, and a
-            brief description of the issue.
+            If you have suggestions or bug reports, please email with your device model, OS version,
+            and a brief description of the issue.
           </p>
         </div>
       </section>

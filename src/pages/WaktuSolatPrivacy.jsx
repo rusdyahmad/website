@@ -7,12 +7,7 @@ export default function WaktuSolatPrivacy() {
 
   return (
     <>
-      <SEO
-        title={title}
-        description={description}
-        path="/waktusolat/privacy"
-        type="article"
-      />
+      <SEO title={title} description={description} path="/waktusolat/privacy" type="article" />
       <section className="legal reveal">
         <div className="container legal-content">
           <a className="btn btn-ghost back-link" href="/waktusolat">
@@ -35,37 +30,32 @@ export default function WaktuSolatPrivacy() {
           <p className="lead">Last updated: January 12, 2026</p>
 
           <p>
-            Waktu Solat (“the App”) respects your privacy. This policy explains
-            what data we collect, how we use it, and your choices.
+            Waktu Solat (“the App”) respects your privacy. This policy explains what data we
+            collect, how we use it, and your choices.
           </p>
 
           <h2>1) Information We Collect</h2>
           <ul>
             <li>
-              <strong>Location (optional):</strong> If you choose “Use my
-              current location,” we access your device’s location to detect the
-              correct prayer zone.
+              <strong>Location (optional):</strong> If you choose “Use my current location,” we
+              access your device’s location to detect the correct prayer zone.
             </li>
             <li>
-              <strong>App preferences:</strong> Selected prayer zone, language,
-              and notification settings.
+              <strong>App preferences:</strong> Selected prayer zone, language, and notification
+              settings.
             </li>
             <li>
-              <strong>Notification data:</strong> Scheduled prayer time
-              notifications and related settings.
+              <strong>Notification data:</strong> Scheduled prayer time notifications and related
+              settings.
             </li>
           </ul>
           <p>
-            We do not collect names, emails, phone numbers, contacts, or
-            advertising identifiers.
+            We do not collect names, emails, phone numbers, contacts, or advertising identifiers.
           </p>
 
           <h2>2) How We Use Information</h2>
           <ul>
-            <li>
-              To detect your prayer zone (location is used only when you request
-              it).
-            </li>
+            <li>To detect your prayer zone (location is used only when you request it).</li>
             <li>To calculate and display prayer times.</li>
             <li>To schedule prayer notifications and reminders.</li>
           </ul>
@@ -73,8 +63,7 @@ export default function WaktuSolatPrivacy() {
           <h2>3) Data Storage</h2>
           <ul>
             <li>
-              Your data is stored locally on your device (zone, settings, cached
-              prayer times).
+              Your data is stored locally on your device (zone, settings, cached prayer times).
             </li>
             <li>We do not upload or share your data with any third parties.</li>
           </ul>
@@ -82,15 +71,15 @@ export default function WaktuSolatPrivacy() {
           <h2>4) Permissions</h2>
           <ul>
             <li>
-              <strong>Location (foreground):</strong> Used only for zone
-              detection when you request it.
+              <strong>Location (foreground):</strong> Used only for zone detection when you request
+              it.
             </li>
             <li>
               <strong>Notifications:</strong> Used to show prayer reminders.
             </li>
             <li>
-              <strong>Exact alarms (Android):</strong> Used to deliver
-              time-critical prayer notifications.
+              <strong>Exact alarms (Android):</strong> Used to deliver time-critical prayer
+              notifications.
             </li>
           </ul>
 
@@ -98,22 +87,16 @@ export default function WaktuSolatPrivacy() {
           <p>We do not sell, rent, or share your data with third parties.</p>
 
           <h2>6) Data Retention &amp; Deletion</h2>
-          <p>
-            Data stays on your device until you clear app data or uninstall the
-            app.
-          </p>
+          <p>Data stays on your device until you clear app data or uninstall the app.</p>
 
           <h2>7) Children’s Privacy</h2>
           <p>
-            The App is not directed to children under 13, and we do not
-            knowingly collect personal data from children.
+            The App is not directed to children under 13, and we do not knowingly collect personal
+            data from children.
           </p>
 
           <h2>8) Changes to This Policy</h2>
-          <p>
-            We may update this policy. Any changes will be reflected in the
-            updated date above.
-          </p>
+          <p>We may update this policy. Any changes will be reflected in the updated date above.</p>
 
           <h2>Contact</h2>
           <p>If you have questions, contact:</p>
