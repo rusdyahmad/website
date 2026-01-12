@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home.jsx";
+import GadgetOps from "./pages/GadgetOps.jsx";
 import Sini from "./pages/Sini.jsx";
 import WaktuSolat from "./pages/WaktuSolat.jsx";
 import WaktuSolatPrivacy from "./pages/WaktuSolatPrivacy.jsx";
@@ -13,6 +14,7 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="gadget-ops" element={<GadgetOps />} />
         <Route path="sini" element={<Sini />} />
         <Route path="waktusolat" element={<WaktuSolat />} />
         <Route path="waktusolat/privacy" element={<WaktuSolatPrivacy />} />

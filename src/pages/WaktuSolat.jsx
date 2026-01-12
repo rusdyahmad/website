@@ -34,7 +34,7 @@ export default function WaktuSolat() {
         description={description}
         path="/waktusolat"
         type="article"
-        image="/waktusolat/splash.jpg"
+        image="/projects/waktusolat/splash.jpg"
         jsonLd={jsonLd}
       />
       <section className="case-hero reveal">
@@ -75,7 +75,7 @@ export default function WaktuSolat() {
             </div>
           </div>
           <div className="case-media">
-            <img src="/waktusolat/icon.png" alt="Waktu Solat app icon" loading="lazy" />
+            <img src="/projects/waktusolat/icon.png" alt="Waktu Solat app icon" loading="lazy" />
           </div>
         </div>
       </section>
@@ -129,7 +129,7 @@ export default function WaktuSolat() {
             {[1, 2, 3, 4].map((num) => (
               <div className="phone-shot" key={num}>
                 <img
-                  src={`/waktusolat/${num}.png`}
+                  src={`/projects/waktusolat/${num}.png`}
                   alt={`Waktu Solat screen ${num}`}
                   loading="lazy"
                 />

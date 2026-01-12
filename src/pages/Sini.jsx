@@ -4,7 +4,7 @@ import SEO from "../components/SEO.jsx";
 export default function Sini() {
   const title = "Sini — Sales Platform";
   const description =
-    "All-in-one form builder + checkout for products, bookings, and digital goods with a live dashboard for revenue, orders, and customers.";
+    "Multi-tenant sales platform with custom domains, storefront checkout, order ops, analytics, and automated delivery.";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -34,7 +34,7 @@ export default function Sini() {
         description={description}
         path="/sini"
         type="article"
-        image="/sini/hero.jpg"
+        image="/projects/sini/hero.jpg"
         jsonLd={jsonLd}
       />
       <section className="case-hero reveal">
@@ -43,14 +43,14 @@ export default function Sini() {
             <p className="eyebrow">Featured project</p>
             <h1>Sini</h1>
             <p className="lead">
-              An all-in-one form builder + checkout for selling products, bookings, and digital
-              goods. Launch today with your own domain, unlimited products, and a price that only
-              moves when you sell.
+              A multi-tenant sales engine built for serious operators. Sini powers branded
+              storefronts with custom domains, embeddable forms, and a checkout that handles
+              physical, digital, and booking flows end-to-end.
             </p>
             <div className="case-meta">
               <div>
                 <span className="meta-label">Platform</span>
-                <span className="meta-value">Web + Android mobile app</span>
+                <span className="meta-value">Web app + mobile dashboard</span>
               </div>
               <div>
                 <span className="meta-label">Pricing model</span>
@@ -59,13 +59,13 @@ export default function Sini() {
               <div>
                 <span className="meta-label">Core features</span>
                 <span className="meta-value">
-                  Form builder, checkout, orders, analytics, mobile notifications
+                  Custom domains, checkout, promotions, shipping, payouts, analytics
                 </span>
               </div>
             </div>
             <div className="case-actions">
               <a className="btn" href="https://sini.my" target="_blank" rel="noopener noreferrer">
-                View case study
+                Visit website
               </a>
               <Link className="btn btn-ghost" to="/">
                 Back to home
@@ -73,7 +73,7 @@ export default function Sini() {
             </div>
           </div>
           <div className="case-media">
-            <img src="/sini/icon.png" alt="Sini app icon" loading="lazy" />
+            <img src="/projects/sini/icon.png" alt="Sini app icon" loading="lazy" />
           </div>
         </div>
       </section>
@@ -83,15 +83,16 @@ export default function Sini() {
           <div className="case-card">
             <h2>Problem</h2>
             <p>
-              Small businesses and creators wanted a simple way to sell without juggling multiple
-              tools—forms, checkout, payments, and analytics were fragmented and hard to manage.
+              Selling across products, bookings, and digital downloads required a patchwork of
+              tools: forms, payments, shipping, invoices, and customer support lived in separate
+              systems.
             </p>
           </div>
           <div className="case-card">
             <h2>Solution</h2>
             <p>
-              Sini brings everything together: build a sales form, collect payments, manage orders,
-              and track performance in one place.
+              Sini unifies storefronts, checkout, order operations, and analytics with automation
+              for delivery, shipping, and support.
             </p>
           </div>
         </div>
@@ -105,32 +106,36 @@ export default function Sini() {
           </div>
           <div className="case-grid">
             <div className="case-card">
-              <h3>Custom Domain</h3>
-              <p>Own the link your customers remember. Connect your domain in minutes.</p>
+              <h3>Custom domains + subdomains</h3>
+              <p>Launch branded storefronts per tenant with automatic routing.</p>
             </div>
             <div className="case-card">
-              <h3>Unlimited Products</h3>
-              <p>List everything you sell with variants, images, and simple stock control.</p>
+              <h3>Embeddable sales forms</h3>
+              <p>Publish to a full storefront or embed directly on any site.</p>
             </div>
             <div className="case-card">
-              <h3>Order Management</h3>
-              <p>See every order, every step. Stay on top without spreadsheets.</p>
+              <h3>Order operations</h3>
+              <p>Invoices, status updates, refunds, and resend links in one workspace.</p>
             </div>
             <div className="case-card">
-              <h3>Multiple Payments</h3>
-              <p>Offer the payment options your buyers trust with no dev work.</p>
+              <h3>Payments + webhooks</h3>
+              <p>Multiple gateways, callbacks, and webhook automation per form.</p>
             </div>
             <div className="case-card">
-              <h3>Smart Analytics</h3>
-              <p>Know what sells, who buys, and where to grow next.</p>
+              <h3>Promotions engine</h3>
+              <p>Flash sales, bundle deals, and quantity discounts with countdowns.</p>
             </div>
             <div className="case-card">
-              <h3>Form Builder</h3>
-              <p>Drag blocks, customize layout, and launch fast.</p>
+              <h3>Shipping + couriers</h3>
+              <p>Live rates, courier selection, and consignment printing.</p>
             </div>
             <div className="case-card">
-              <h3>Mobile App</h3>
-              <p>Get simple order notifications and stats for each shop on Android.</p>
+              <h3>Analytics + search</h3>
+              <p>Sales dashboards, filters, and global search across orders.</p>
+            </div>
+            <div className="case-card">
+              <h3>Teams + affiliates</h3>
+              <p>Invite staff, manage roles, and run affiliate payouts.</p>
             </div>
           </div>
         </div>
@@ -141,15 +146,15 @@ export default function Sini() {
           <div className="case-card">
             <h2>Who it&apos;s for</h2>
             <p>
-              Creators, sellers, and small teams selling physical products, digital goods, bookings,
-              classes, and event tickets.
+              Creators, sellers, and ops teams managing physical products, bookings, digital
+              downloads, and event tickets at scale.
             </p>
           </div>
           <div className="case-card">
             <h2>My role</h2>
             <p>
-              Full-stack product designer & developer — Strategy, UX/UI, front-end, back-end, and
-              deployment.
+              Full-stack product developer — architecture, tenancy, payments, frontend, and ops
+              tooling.
             </p>
           </div>
         </div>
@@ -160,19 +165,19 @@ export default function Sini() {
           <div className="case-card">
             <h2>Key work</h2>
             <ul>
-              <li>Designed a real dashboard that keeps you in control.</li>
-              <li>Built an Inertia + React form builder UX with fast setup flows.</li>
-              <li>Integrated multiple payment gateways and order lifecycle tooling.</li>
-              <li>Shipped analytics, customer management, and operations views.</li>
-              <li>Developed Android mobile app with Expo for order notifications and stats.</li>
+              <li>Built a multi-tenant architecture with custom domains and storefront routing.</li>
+              <li>Shipped embeddable forms + checkout with promotions and live pricing.</li>
+              <li>Implemented payment callbacks, webhooks, and downloadable delivery links.</li>
+              <li>Created order ops tooling: invoices, refunds, shipping, consignments.</li>
+              <li>Delivered team roles, affiliate payouts, and support ticketing.</li>
             </ul>
           </div>
           <div className="case-card">
             <h2>Results</h2>
             <ul>
-              <li>RM0.20 per successful order pricing model communicated clearly.</li>
-              <li>Faster launch time for sellers with streamlined setup flow.</li>
-              <li>Multi-tenant architecture supporting unlimited products per seller.</li>
+              <li>Single platform for storefronts, checkout, and operations.</li>
+              <li>Faster onboarding with tenant + domain setup flows.</li>
+              <li>Scalable foundation for promotions, shipping, and payouts.</li>
             </ul>
           </div>
         </div>
@@ -189,7 +194,8 @@ export default function Sini() {
             <span className="tag">Inertia.js</span>
             <span className="tag">React 19</span>
             <span className="tag">Tailwind v4</span>
-            <span className="tag">Postgres</span>
+            <span className="tag">Multi-tenant</span>
+            <span className="tag">Webhooks</span>
             <span className="tag">Expo</span>
             <span className="tag">Vite</span>
           </div>
@@ -210,7 +216,11 @@ export default function Sini() {
               "photo_2026-01-12_14-38-23.jpg",
             ].map((photo, index) => (
               <div className="phone-shot" key={photo}>
-                <img src={`/sini/${photo}`} alt={`Sini screen ${index + 1}`} loading="lazy" />
+                <img
+                  src={`/projects/sini/${photo}`}
+                  alt={`Sini screen ${index + 1}`}
+                  loading="lazy"
+                />
               </div>
             ))}
           </div>

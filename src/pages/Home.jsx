@@ -10,7 +10,7 @@ const workItems = [
     tags: ["Expo", "React Native", "Widgets"],
     href: "/waktusolat",
     linkLabel: "Case study",
-    image: "/waktusolat/icon.png",
+    image: "/projects/waktusolat/icon.png",
     layout: "split",
   },
   {
@@ -22,6 +22,17 @@ const workItems = [
     href: "/sini",
     linkLabel: "Case study",
     image: "/projects/sini/sini.png",
+  },
+  {
+    title: "Gadget Ops",
+    category: "Operations platform",
+    description:
+      "Back-office suite for products, serials, multi-channel orders (Shopee/TikTok/Sini), affiliates, warranty claims, payments, and reporting.",
+    tags: ["Orders", "Integrations", "Warranty"],
+    href: "/gadget-ops",
+    linkLabel: "Case study",
+    image: "/projects/gadget-ops/gadget.png",
+    layout: "split",
   },
   {
     title: "XBOSS",
@@ -128,7 +139,19 @@ export default function Home() {
               >
                 {item.image ? (
                   <div className="work-image">
-                    <img src={item.image} alt={`${item.title} screenshot`} loading="lazy" />
+                    {item.href ? (
+                      item.href.startsWith("/") ? (
+                        <Link to={item.href}>
+                          <img src={item.image} alt={`${item.title} screenshot`} loading="lazy" />
+                        </Link>
+                      ) : (
+                        <a href={item.href} target="_blank" rel="noreferrer">
+                          <img src={item.image} alt={`${item.title} screenshot`} loading="lazy" />
+                        </a>
+                      )
+                    ) : (
+                      <img src={item.image} alt={`${item.title} screenshot`} loading="lazy" />
+                    )}
                   </div>
                 ) : null}
                 <article className={`work-card${item.layout === "split" ? " split-card" : ""}`}>
