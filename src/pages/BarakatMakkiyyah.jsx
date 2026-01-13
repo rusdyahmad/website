@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import SEO from "../components/SEO.jsx";
 
 export default function BarakatMakkiyyah() {
-  const title = "Barakat Makkiyyah — Offline Selawat Companion";
+  const title = "Barakat Makkiyyah — Offline Selawat Library";
   const description =
-    "Offline Barakat Makkiyyah collection with 805 selawat, local audio recitations, hizb filters, and flexible reading modes.";
+    "Offline Barakat Makkiyyah app with 805 selawat, hizb + one-third filters, multilingual UI, and on-device audio playback with seek controls.";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -43,9 +43,9 @@ export default function BarakatMakkiyyah() {
             <p className="eyebrow">Case study</p>
             <h1>Barakat Makkiyyah</h1>
             <p className="lead">
-              A fully offline Barakat Makkiyyah companion featuring 805 selawat entries, local audio
-              playback, and guided recitation options so users can follow hizb or complete the
-              collection on their own schedule.
+              A fully offline Barakat Makkiyyah library featuring 805 selawat, guided recitation
+              methods (hizb or one-third), multilingual UI, and on-device audio playback so readers
+              can follow the text with or without an internet connection.
             </p>
             <div className="case-meta">
               <div>
@@ -55,13 +55,15 @@ export default function BarakatMakkiyyah() {
               <div>
                 <span className="meta-label">Core features</span>
                 <span className="meta-value">
-                  Offline library, audio recitations, book-based writing, hizb filters, search,
-                  adjustable typography
+                  Offline library, hizb + 1/3 filters, audio with seek + background playback,
+                  search, adjustable typography, multilingual + theme support
                 </span>
               </div>
               <div>
                 <span className="meta-label">Data source</span>
-                <span className="meta-value">Bundled Barakat Makkiyyah text + audio assets</span>
+                <span className="meta-value">
+                  Bundled Barakat Makkiyyah text, Arabic introduction, and audio assets
+                </span>
               </div>
             </div>
             <div className="case-actions">
@@ -98,19 +100,20 @@ export default function BarakatMakkiyyah() {
             <h2>What I built</h2>
             <ul>
               <li>Offline Barakat Makkiyyah library with 805 selawat entries.</li>
-              <li>Local audio playback with progress controls and quick play/pause.</li>
-              <li>Writing selawat from books to preserve the original text flow.</li>
-              <li>Reading paths for hizb-by-day, one-third in three days, or full recitation.</li>
-              <li>Search by number, range filters, and adjustable font size for readability.</li>
+              <li>Recitation guide with hizb (7 days) and one-third (3 days) reading paths.</li>
+              <li>On-device audio playback with play, pause, stop, and seek controls.</li>
+              <li>Search by number and highlight matching names inside each entry.</li>
+              <li>Adjustable font size, theme options, and multilingual interface.</li>
             </ul>
           </div>
           <div className="case-card">
             <h2>Technical highlights</h2>
             <ul>
               <li>Expo + React Native build optimized for offline use.</li>
-              <li>Audio playback handled entirely from bundled assets.</li>
+              <li>Audio playback handled entirely from bundled assets with seek support.</li>
+              <li>Background audio enabled via platform audio mode settings.</li>
               <li>AsyncStorage preferences for language, theme, and typography.</li>
-              <li>FlatList rendering for fast scrolling through long content lists.</li>
+              <li>FlatList + sticky controls for fast navigation through long content lists.</li>
             </ul>
           </div>
         </div>
@@ -125,7 +128,7 @@ export default function BarakatMakkiyyah() {
           <div className="case-tags">
             <span className="tag">Expo</span>
             <span className="tag">React Native</span>
-            <span className="tag">Offline Audio</span>
+            <span className="tag">Expo Audio</span>
             <span className="tag">AsyncStorage</span>
             <span className="tag">Multilingual UI</span>
           </div>
