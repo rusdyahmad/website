@@ -38,8 +38,8 @@ export default function GadgetOps() {
             <p className="eyebrow">Featured project</p>
             <h1>Gadget Ops</h1>
             <p className="lead">
-              A unified operations hub for product inventory, serial tracking, multi-channel
-              orders, affiliate commissions, warranty workflows, and analytics.
+              A unified operations hub for product inventory, serial tracking, multi-channel orders,
+              affiliate commissions, warranty workflows, and analytics.
             </p>
             <div className="case-meta">
               <div>

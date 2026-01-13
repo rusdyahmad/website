@@ -3,6 +3,17 @@ import SEO from "../components/SEO.jsx";
 
 const workItems = [
   {
+    title: "Barakat Makkiyyah",
+    category: "Mobile app",
+    description:
+      "Offline Barakat Makkiyyah companion with 805 selawat, local audio recitations, hizb-based reading paths, and fast search.",
+    tags: ["Offline", "Audio", "Expo"],
+    href: "/barakat-makkiyyah",
+    linkLabel: "Case study",
+    image: "/projects/barakat/icon.png",
+    layout: "split",
+  },
+  {
     title: "Waktu Solat",
     category: "Mobile app",
     description:
