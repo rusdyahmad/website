@@ -27,7 +27,7 @@ export default function WaktuSolatPrivacy() {
           </a>
           <p className="eyebrow">Policy</p>
           <h1>Privacy Policy</h1>
-          <p className="lead">Last updated: January 12, 2026</p>
+          <p className="lead">Last updated: January 13, 2026</p>
 
           <p>
             Waktu Solat (“the App”) respects your privacy. This policy explains what data we
@@ -37,8 +37,8 @@ export default function WaktuSolatPrivacy() {
           <h2>1) Information We Collect</h2>
           <ul>
             <li>
-              <strong>Location (optional):</strong> If you choose “Use my current location,” we
-              access your device’s location to detect the correct prayer zone.
+              <strong>Location (optional):</strong> If you choose &quot;Use my current location,&quot;
+              we access your device&apos;s location to detect the correct prayer zone.
             </li>
             <li>
               <strong>App preferences:</strong> Selected prayer zone, language, and notification
@@ -48,9 +48,15 @@ export default function WaktuSolatPrivacy() {
               <strong>Notification data:</strong> Scheduled prayer time notifications and related
               settings.
             </li>
+            <li>
+              <strong>Device identifiers:</strong> The app framework (Expo) may collect device
+              identifiers for push notification registration, crash reporting, and app stability.
+              These identifiers are used solely for app functionality and error tracking.
+            </li>
           </ul>
           <p>
-            We do not collect names, emails, phone numbers, contacts, or advertising identifiers.
+            We do not collect names, emails, phone numbers, contacts, or advertising identifiers for
+            marketing purposes.
           </p>
 
           <h2>2) How We Use Information</h2>
@@ -58,6 +64,11 @@ export default function WaktuSolatPrivacy() {
             <li>To detect your prayer zone (location is used only when you request it).</li>
             <li>To calculate and display prayer times.</li>
             <li>To schedule prayer notifications and reminders.</li>
+            <li>
+              To register and deliver push notifications (device identifiers are used by the app
+              framework).
+            </li>
+            <li>To monitor app stability and fix crashes (anonymous error reports).</li>
           </ul>
 
           <h2>3) Data Storage</h2>
@@ -65,7 +76,11 @@ export default function WaktuSolatPrivacy() {
             <li>
               Your data is stored locally on your device (zone, settings, cached prayer times).
             </li>
-            <li>We do not upload or share your data with any third parties.</li>
+            <li>
+              Device identifiers may be transmitted to Expo&apos;s infrastructure for push notifications
+              and crash reporting. These transmissions are encrypted and used solely for app
+              functionality.
+            </li>
           </ul>
 
           <h2>4) Permissions</h2>
@@ -84,7 +99,12 @@ export default function WaktuSolatPrivacy() {
           </ul>
 
           <h2>5) Data Sharing</h2>
-          <p>We do not sell, rent, or share your data with third parties.</p>
+          <p>
+            We do not sell, rent, or share your personal data with third parties for marketing
+            purposes. Device identifiers are shared with Expo (our app development framework) only
+            for technical purposes: push notification delivery, crash reporting, and app updates.
+            Expo is bound by their own privacy policy and does not use this data for advertising.
+          </p>
 
           <h2>6) Data Retention &amp; Deletion</h2>
           <p>Data stays on your device until you clear app data or uninstall the app.</p>

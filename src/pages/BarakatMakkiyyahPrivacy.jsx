@@ -35,8 +35,8 @@ export default function BarakatMakkiyyahPrivacy() {
           <p className="lead">Last updated: January 12, 2026</p>
 
           <p>
-            Barakat Makkiyyah (&quot;the App&quot;) is designed to work fully offline. This policy explains
-            what data we store on your device and how it is used.
+            Barakat Makkiyyah (&quot;the App&quot;) is designed to work fully offline. This policy
+            explains what data we store on your device and how it is used.
           </p>
 
           <h2>1) Information We Collect</h2>
