@@ -27,7 +27,7 @@ export default function WaktuSolatPrivacy() {
           </a>
           <p className="eyebrow">Policy</p>
           <h1>Privacy Policy</h1>
-          <p className="lead">Last updated: January 13, 2026</p>
+          <p className="lead">Last updated: January 14, 2026</p>
 
           <p>
             Waktu Solat (“the App”) respects your privacy. This policy explains what data we
@@ -42,17 +42,18 @@ export default function WaktuSolatPrivacy() {
               zone.
             </li>
             <li>
-              <strong>App preferences:</strong> Selected prayer zone, language, and notification
-              settings.
+              <strong>App preferences:</strong> Selected prayer zone, language, time format, and
+              notification settings.
             </li>
             <li>
-              <strong>Notification data:</strong> Scheduled prayer time notifications and related
-              settings.
+              <strong>Local notification data:</strong> Scheduled prayer time notifications and
+              related settings (stored on-device).
             </li>
             <li>
-              <strong>Device identifiers:</strong> The app framework (Expo) may collect device
-              identifiers for push notification registration, crash reporting, and app stability.
-              These identifiers are used solely for app functionality and error tracking.
+              <strong>Device identifiers (limited):</strong> Our app framework (Expo) and/or
+              platform services may process device identifiers (e.g., Android ID or device tokens)
+              for app functionality, stability, and diagnostics. We do not use these for
+              advertising.
             </li>
           </ul>
           <p>
@@ -64,12 +65,11 @@ export default function WaktuSolatPrivacy() {
           <ul>
             <li>To detect your prayer zone (location is used only when you request it).</li>
             <li>To calculate and display prayer times.</li>
-            <li>To schedule prayer notifications and reminders.</li>
+            <li>To schedule local prayer reminders on your device.</li>
             <li>
-              To register and deliver push notifications (device identifiers are used by the app
-              framework).
+              To maintain app stability and fix issues (diagnostics/technical analytics via service
+              providers).
             </li>
-            <li>To monitor app stability and fix crashes (anonymous error reports).</li>
           </ul>
 
           <h2>3) Data Storage</h2>
@@ -78,9 +78,8 @@ export default function WaktuSolatPrivacy() {
               Your data is stored locally on your device (zone, settings, cached prayer times).
             </li>
             <li>
-              Device identifiers may be transmitted to Expo&apos;s infrastructure for push
-              notifications and crash reporting. These transmissions are encrypted and used solely
-              for app functionality.
+              Device identifiers and diagnostic data may be transmitted to our service providers
+              (e.g., Expo) for technical purposes only.
             </li>
           </ul>
 
@@ -101,10 +100,10 @@ export default function WaktuSolatPrivacy() {
 
           <h2>5) Data Sharing</h2>
           <p>
-            We do not sell, rent, or share your personal data with third parties for marketing
-            purposes. Device identifiers are shared with Expo (our app development framework) only
-            for technical purposes: push notification delivery, crash reporting, and app updates.
-            Expo is bound by their own privacy policy and does not use this data for advertising.
+            We do not sell or rent personal data. We may share limited technical data (such as
+            device identifiers or diagnostics) with service providers like Expo for app
+            functionality and stability. These providers are bound by their own privacy policies and
+            do not use this data for advertising on our behalf.
           </p>
 
           <h2>6) Data Retention &amp; Deletion</h2>
