@@ -37,8 +37,9 @@ export default function WaktuSolatPrivacy() {
           <h2>1) Information We Collect</h2>
           <ul>
             <li>
-              <strong>Location (optional):</strong> If you choose &quot;Use my current location,&quot;
-              we access your device&apos;s location to detect the correct prayer zone.
+              <strong>Location (optional):</strong> If you choose &quot;Use my current
+              location,&quot; we access your device&apos;s location to detect the correct prayer
+              zone.
             </li>
             <li>
               <strong>App preferences:</strong> Selected prayer zone, language, and notification
@@ -77,9 +78,9 @@ export default function WaktuSolatPrivacy() {
               Your data is stored locally on your device (zone, settings, cached prayer times).
             </li>
             <li>
-              Device identifiers may be transmitted to Expo&apos;s infrastructure for push notifications
-              and crash reporting. These transmissions are encrypted and used solely for app
-              functionality.
+              Device identifiers may be transmitted to Expo&apos;s infrastructure for push
+              notifications and crash reporting. These transmissions are encrypted and used solely
+              for app functionality.
             </li>
           </ul>
 
