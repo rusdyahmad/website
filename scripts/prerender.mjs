@@ -5,6 +5,10 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 const routes = [
   "/",
   "/sini",
+  "/barakat-makkiyyah",
+  "/barakat-makkiyyah/privacy",
+  "/barakat-makkiyyah/terms",
+  "/barakat-makkiyyah/support",
   "/waktusolat",
   "/waktusolat/privacy",
   "/waktusolat/terms",
