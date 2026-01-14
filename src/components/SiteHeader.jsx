@@ -21,9 +21,6 @@ export default function SiteHeader() {
           <a href="/#about" onClick={closeNav}>
             About
           </a>
-          <a href="/barakat-makkiyyah" onClick={closeNav}>
-            Barakat Makkiyyah
-          </a>
           <a href="/waktusolat" onClick={closeNav}>
             Waktu Solat
           </a>
