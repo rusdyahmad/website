@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import SEO from "../components/SEO.jsx";
 
 export default function BarakatMakkiyyah() {
@@ -68,6 +67,37 @@ export default function BarakatMakkiyyah() {
             </div>
             <div className="case-actions">
               <a
+                className="btn btn-ghost"
+                href="https://play.google.com/store/apps/details?id=com.barakatmakkiyyah.rusdyahmad"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  gap: "10px",
+                  background: "#0b0b0b",
+                  color: "#fff",
+                  borderColor: "#0b0b0b",
+                  width: "100%",
+                  justifyContent: "center",
+                }}
+              >
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  role="img"
+                  focusable="false"
+                >
+                  <path d="M4 3.5v17l12.8-8.5L4 3.5z" fill="#00d2ff" />
+                  <path d="M4 3.5l6.8 7-3.1 3.1L4 3.5z" fill="#00f076" />
+                  <path d="M4 20.5l6.8-7-3.1-3.1L4 20.5z" fill="#ffcf3f" />
+                  <path d="M16.8 12l3.2-2.1c.5-.3.5-1 0-1.3L16.8 6 10.8 12l6 6z" fill="#ff5b5b" />
+                </svg>
+                Get it on Google Play
+              </a>
+            </div>
+            <div className="case-actions" style={{ marginTop: "10px" }}>
+              <a
                 className="btn"
                 href="https://kitabselawat.com"
                 target="_blank"
@@ -75,9 +105,6 @@ export default function BarakatMakkiyyah() {
               >
                 Visit website
               </a>
-              <Link className="btn" to="/">
-                Back to home
-              </Link>
               <a className="btn btn-ghost" href="/#work">
                 View all work
               </a>
@@ -156,6 +183,39 @@ export default function BarakatMakkiyyah() {
                 />
               </div>
             ))}
+          </div>
+          <div className="case-actions" style={{ marginTop: "48px" }}>
+            <a
+              className="btn btn-ghost"
+              href="https://play.google.com/store/apps/details?id=com.barakatmakkiyyah.rusdyahmad"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                gap: "10px",
+                background: "#0b0b0b",
+                color: "#fff",
+                borderColor: "#0b0b0b",
+                width: "100%",
+                maxWidth: "360px",
+                margin: "0 auto",
+                justifyContent: "center",
+              }}
+            >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                role="img"
+                focusable="false"
+              >
+                <path d="M4 3.5v17l12.8-8.5L4 3.5z" fill="#00d2ff" />
+                <path d="M4 3.5l6.8 7-3.1 3.1L4 3.5z" fill="#00f076" />
+                <path d="M4 20.5l6.8-7-3.1-3.1L4 20.5z" fill="#ffcf3f" />
+                <path d="M16.8 12l3.2-2.1c.5-.3.5-1 0-1.3L16.8 6 10.8 12l6 6z" fill="#ff5b5b" />
+              </svg>
+              Get it on Google Play
+            </a>
           </div>
         </div>
       </section>
