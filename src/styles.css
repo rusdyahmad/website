@@ -757,9 +757,21 @@ section {
   font-size: 0.9rem;
 }
 
+.footer-inner {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .footer-links {
   display: flex;
   gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-copy {
+  color: var(--muted);
 }
 
 .reveal {
