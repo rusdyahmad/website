@@ -11,6 +11,9 @@ import WaktuSolat from "./pages/WaktuSolat.jsx";
 import WaktuSolatPrivacy from "./pages/WaktuSolatPrivacy.jsx";
 import WaktuSolatTerms from "./pages/WaktuSolatTerms.jsx";
 import WaktuSolatSupport from "./pages/WaktuSolatSupport.jsx";
+import RefundPolicy from "./pages/RefundPolicy.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import ShippingPolicy from "./pages/ShippingPolicy.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
@@ -28,6 +31,9 @@ export default function App() {
         <Route path="waktusolat/privacy" element={<WaktuSolatPrivacy />} />
         <Route path="waktusolat/terms" element={<WaktuSolatTerms />} />
         <Route path="waktusolat/support" element={<WaktuSolatSupport />} />
+        <Route path="refund-policy" element={<RefundPolicy />} />
+        <Route path="privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="shipping-policy" element={<ShippingPolicy />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

@@ -7,6 +7,9 @@ export default function SiteFooter() {
           <a href="/#work">Work</a>
           <a href="/#services">Services</a>
           <a href="/#about">About</a>
+          <a href="/refund-policy">Refund Policy</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/shipping-policy">Shipping Policy</a>
         </div>
       </div>
     </footer>

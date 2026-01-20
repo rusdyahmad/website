@@ -13,6 +13,9 @@ const routes = [
   "/waktusolat/privacy",
   "/waktusolat/terms",
   "/waktusolat/support",
+  "/refund-policy",
+  "/privacy-policy",
+  "/shipping-policy",
   "/404",
 ];
 
