@@ -1,0 +1,16 @@
+{
+  "name": "RA — Full-Stack Coder",
+  "short_name": "RA",
+  "description": "Full-stack coder based in Malacca, Malaysia. Laravel, Inertia, React, Postgres, MySQL, and Expo app development.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4efe8",
+  "theme_color": "#f4efe8",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
