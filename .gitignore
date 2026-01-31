@@ -15,3 +15,7 @@ vendor/
 # OS/IDE
 .DS_Store
 .vscode/
+
+# Build artifacts
+/dist/
+/dist-ssr/
