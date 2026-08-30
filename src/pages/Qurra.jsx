@@ -203,6 +203,9 @@ export default function Qurra() {
               </header>
 
               <div className="qurra-story-body">
+                <div className="qurra-float-image">
+                  <img src="/bg-ambient.png" alt="Catatan Rasuk Ke Jiwa" loading="eager" />
+                </div>
                 {story.sections.map((section, idx) => {
                   if (section.type === "p") {
                     return (
