@@ -45,9 +45,15 @@ async function decryptStory(password) {
 
 export default function Qurra() {
   const [password, setPassword] = useState("");
+  const cacheKey = "q_v_" + PAYLOAD.iv;
+
   const [story, setStory] = useState(() => {
     if (typeof window !== "undefined" && window.sessionStorage) {
-      const cached = window.sessionStorage.getItem("q_content");
+      // Clear legacy unversioned caches
+      window.sessionStorage.removeItem("q_content");
+      window.sessionStorage.removeItem("qurra_auth");
+
+      const cached = window.sessionStorage.getItem(cacheKey);
       if (cached) {
         try {
           return JSON.parse(cached);
@@ -72,7 +78,7 @@ export default function Qurra() {
       const decrypted = await decryptStory(password);
       setStory(decrypted);
       if (typeof window !== "undefined" && window.sessionStorage) {
-        window.sessionStorage.setItem("q_content", JSON.stringify(decrypted));
+        window.sessionStorage.setItem(cacheKey, JSON.stringify(decrypted));
       }
     } catch {
       setError("Kata laluan tidak tepat. Sila cuba lagi.");
@@ -86,6 +92,7 @@ export default function Qurra() {
     setPassword("");
     setError("");
     if (typeof window !== "undefined" && window.sessionStorage) {
+      window.sessionStorage.removeItem(cacheKey);
       window.sessionStorage.removeItem("q_content");
     }
   };
