@@ -210,7 +210,7 @@ export default function Qurra() {
               </header>
 
               <div className="qurra-story-body">
-                <div className="qurra-float-image">
+                <div className="qurra-float-image desktop-only">
                   <img src="/bg-ambient.png" alt="Catatan Rasuk Ke Jiwa" loading="eager" />
                 </div>
                 {story.sections.map((section, idx) => {
@@ -269,8 +269,15 @@ export default function Qurra() {
                   }
                   if (section.type === "divider") {
                     return (
-                      <div key={idx} className="qurra-section-divider">
-                        <span>❧</span>
+                      <div key={idx} className="qurra-divider-group">
+                        {idx < 20 && (
+                          <div className="qurra-mid-image mobile-only">
+                            <img src="/bg-ambient.png" alt="Catatan Rasuk Ke Jiwa" loading="lazy" />
+                          </div>
+                        )}
+                        <div className="qurra-section-divider">
+                          <span>❧</span>
+                        </div>
                       </div>
                     );
                   }
