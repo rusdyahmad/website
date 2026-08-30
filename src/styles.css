@@ -1127,6 +1127,93 @@ section {
   opacity: 0.9;
 }
 
+/* Audio Player */
+.qurra-audio-player {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.qurra-audio-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: rgba(243, 111, 58, 0.08);
+  border: 1px solid rgba(243, 111, 58, 0.28);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: inherit;
+  box-shadow: 0 2px 8px rgba(243, 111, 58, 0.06);
+}
+
+.qurra-audio-btn:hover {
+  background: rgba(243, 111, 58, 0.14);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.qurra-audio-btn.is-playing {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+  box-shadow: 0 6px 20px rgba(243, 111, 58, 0.35);
+}
+
+.qurra-audio-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qurra-audio-bars {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 14px;
+  margin-left: 2px;
+}
+
+.qurra-audio-bars .bar {
+  width: 3px;
+  background: currentColor;
+  border-radius: 2px;
+  animation: audioWave 0.8s ease-in-out infinite alternate;
+}
+
+.qurra-audio-bars .b1 {
+  height: 40%;
+  animation-delay: 0.1s;
+}
+
+.qurra-audio-bars .b2 {
+  height: 90%;
+  animation-delay: 0.3s;
+}
+
+.qurra-audio-bars .b3 {
+  height: 50%;
+  animation-delay: 0.2s;
+}
+
+.qurra-audio-bars .b4 {
+  height: 100%;
+  animation-delay: 0.4s;
+}
+
+@keyframes audioWave {
+  0% {
+    height: 25%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
 /* Image float and text wrap (MS Word style) */
 .desktop-only {
   display: block;
