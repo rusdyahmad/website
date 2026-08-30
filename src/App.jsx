@@ -14,6 +14,7 @@ import WaktuSolatSupport from "./pages/WaktuSolatSupport.jsx";
 import RefundPolicy from "./pages/RefundPolicy.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 import ShippingPolicy from "./pages/ShippingPolicy.jsx";
+import Qurra from "./pages/Qurra.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="refund-policy" element={<RefundPolicy />} />
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
         <Route path="shipping-policy" element={<ShippingPolicy />} />
+        <Route path="qurra" element={<Qurra />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

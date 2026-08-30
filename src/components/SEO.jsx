@@ -7,6 +7,7 @@ export default function SEO({
   image = "/og.png",
   type = "website",
   jsonLd,
+  noIndex = false,
 }) {
   const origin = "https://rusdy.com";
   const url = `${origin}${path}`;
@@ -14,8 +15,14 @@ export default function SEO({
   return (
     <Helmet>
       <title>{title}</title>
+      {noIndex ? (
+        <>
+          <meta name="robots" content="noindex, nofollow, noarchive" />
+          <meta name="googlebot" content="noindex, nofollow, noarchive" />
+        </>
+      ) : null}
       <meta name="description" content={description} />
-      <link rel="canonical" href={url} />
+      {!noIndex && <link rel="canonical" href={url} />}
 
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />

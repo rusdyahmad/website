@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /qurra
 Allow: /
 
 Sitemap: https://rusdy.com/sitemap.xml
