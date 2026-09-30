@@ -8,26 +8,32 @@ export default function Layout() {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
+    // Only scroll to top if there is no hash
+    if (!location.hash) {
+      window.scrollTo(0, 0);
+    } else {
+      const el = document.getElementById(location.hash.slice(1));
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.pathname, location.hash]);
 
   useEffect(() => {
-    const elements = document.querySelectorAll(".reveal");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            entry.target.classList.add("in");
+            observer.unobserve(entry.target);
           }
         });
       },
       { threshold: 0.15 }
     );
 
-    elements.forEach((el, index) => {
-      el.style.transitionDelay = `${index * 0.08}s`;
-      observer.observe(el);
-    });
+    const elements = document.querySelectorAll(".rv, #pipe");
+    elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
   }, [location.pathname]);
@@ -45,12 +51,13 @@ export default function Layout() {
 
   return (
     <>
-      <div className="bg-noise"></div>
       <SiteHeader />
-      <main id="top">
-        <Outlet />
-      </main>
-      <SiteFooter />
+      <div className="frame" id="top">
+        <main>
+          <Outlet />
+        </main>
+        <SiteFooter />
+      </div>
       <SpeedInsights />
     </>
   );

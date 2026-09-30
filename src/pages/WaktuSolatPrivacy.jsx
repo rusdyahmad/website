@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SEO from "../components/SEO.jsx";
 
 export default function WaktuSolatPrivacy() {
@@ -7,127 +8,103 @@ export default function WaktuSolatPrivacy() {
 
   return (
     <>
-      <SEO title={title} description={description} path="/waktusolat/privacy" type="article" />
-      <section className="legal reveal">
-        <div className="container legal-content">
-          <a className="btn btn-ghost back-link" href="/waktusolat">
-            <span className="back-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="img" focusable="false">
-                <path
-                  d="M15 6l-6 6 6 6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </span>
-            Back to Waktu Solat
-          </a>
-          <p className="eyebrow">Policy</p>
-          <h1>Privacy Policy</h1>
-          <p className="lead">Last updated: January 14, 2026</p>
+      <SEO
+        title={title}
+        description={description}
+        path="/waktusolat/privacy"
+        type="article"
+      />
 
-          <p>
-            Waktu Solat (“the App”) respects your privacy. This policy explains what data we
-            collect, how we use it, and your choices.
-          </p>
+      <div className="back-strip">
+        <Link to="/waktusolat" className="back-link">
+          ← cd .. // return_to_app
+        </Link>
+        <span className="dim">~/apps/waktusolat/privacy</span>
+      </div>
 
-          <h2>1) Information We Collect</h2>
-          <ul>
-            <li>
-              <strong>Location (optional):</strong> If you choose &quot;Use my current
-              location,&quot; we access your device&apos;s location to detect the correct prayer
-              zone.
-            </li>
-            <li>
-              <strong>App preferences:</strong> Selected prayer zone, language, time format, and
-              notification settings.
-            </li>
-            <li>
-              <strong>Local notification data:</strong> Scheduled prayer time notifications and
-              related settings (stored on-device).
-            </li>
-            <li>
-              <strong>Device identifiers (limited):</strong> Our app framework (Expo) and/or
-              platform services may process device identifiers (e.g., Android ID or device tokens)
-              for app functionality, stability, and diagnostics. We do not use these for
-              advertising.
-            </li>
-          </ul>
-          <p>
-            We do not collect names, emails, phone numbers, contacts, or advertising identifiers for
-            marketing purposes.
-          </p>
+      <div className="term-doc-page px">
+        <div className="doc-frame">
+          <div className="doc-header">
+            <span className="tag xs up">[SYS] // telemetry_privacy_manifest</span>
+            <h1>Privacy Policy</h1>
+            <div className="doc-meta">
+              <span>App: <b>Waktu Solat</b></span>
+              <span>Updated: <b>January 14, 2026</b></span>
+              <span>Telemetry: <b className="ok">NO TRACKING / LOCAL FIRST</b></span>
+            </div>
+          </div>
 
-          <h2>2) How We Use Information</h2>
-          <ul>
-            <li>To detect your prayer zone (location is used only when you request it).</li>
-            <li>To calculate and display prayer times.</li>
-            <li>To schedule local prayer reminders on your device.</li>
-            <li>
-              To maintain app stability and fix issues (diagnostics/technical analytics via service
-              providers).
-            </li>
-          </ul>
+          <div className="doc-body">
+            <p className="lead" style={{ fontSize: "16px", color: "var(--fg)" }}>
+              Waktu Solat (&quot;the App&quot;) is built to provide accurate prayer schedules with full respect
+              for your device privacy. This policy outlines what data is stored locally, how permissions are used, and your controls.
+            </p>
 
-          <h2>3) Data Storage</h2>
-          <ul>
-            <li>
-              Your data is stored locally on your device (zone, settings, cached prayer times).
-            </li>
-            <li>
-              Device identifiers and diagnostic data may be transmitted to our service providers
-              (e.g., Expo) for technical purposes only.
-            </li>
-          </ul>
+            <h2>[01] // Information We Handle</h2>
+            <div className="doc-box">
+              <h3>1.1 Foreground Location (Optional)</h3>
+              <p>
+                When you tap &quot;Use my current location,&quot; the App queries GPS coordinates strictly in the foreground
+                to match your Malaysian district with the corresponding JAKIM prayer zone. Your exact coordinates are never
+                logged or sent to remote servers.
+              </p>
+            </div>
 
-          <h2>4) Permissions</h2>
-          <ul>
-            <li>
-              <strong>Location (foreground):</strong> Used only for zone detection when you request
-              it.
-            </li>
-            <li>
-              <strong>Notifications:</strong> Used to show prayer reminders.
-            </li>
-            <li>
-              <strong>Exact alarms (Android):</strong> Used to deliver time-critical prayer
-              notifications.
-            </li>
-          </ul>
+            <div className="doc-box">
+              <h3>1.2 Local Preferences</h3>
+              <ul>
+                <li>Selected prayer zone and calculation adjustments.</li>
+                <li>Display language, 12h/24h time formatting, and notifications toggle.</li>
+                <li>Cached prayer timetable JSON for offline viewing.</li>
+              </ul>
+              <p style={{ marginTop: "10px" }}>
+                All preference records remain inside local sandboxed device storage and are never synchronized off-device.
+              </p>
+            </div>
 
-          <h2>5) Data Sharing</h2>
-          <p>
-            We do not sell or rent personal data. We may share limited technical data (such as
-            device identifiers or diagnostics) with service providers like Expo for app
-            functionality and stability. These providers are bound by their own privacy policies and
-            do not use this data for advertising on our behalf.
-          </p>
+            <h2>[02] // Operating Permissions</h2>
+            <div className="doc-box" style={{ padding: 0 }}>
+              <table className="sys" style={{ width: "100%" }}>
+                <thead>
+                  <tr style={{ borderBottom: "1px solid var(--line-2)" }}>
+                    <th style={{ padding: "10px 14px", textAlign: "left", color: "var(--acc)", fontSize: "11px", textTransform: "uppercase" }}>Permission</th>
+                    <th style={{ padding: "10px 14px", textAlign: "left", color: "var(--acc)", fontSize: "11px", textTransform: "uppercase" }}>Functionality</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style={{ padding: "10px 14px" }}>LOCATION (FOREGROUND)</td>
+                    <td style={{ padding: "10px 14px" }}>Used on-demand strictly to detect your prayer zone code.</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: "10px 14px" }}>POST NOTIFICATIONS</td>
+                    <td style={{ padding: "10px 14px" }}>Schedules local alarms on your device when prayer time arrives.</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: "10px 14px" }}>EXACT ALARMS</td>
+                    <td style={{ padding: "10px 14px" }}>Ensures accurate azan timing without OS battery-saver delays.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-          <h2>6) Data Retention &amp; Deletion</h2>
-          <p>Data stays on your device until you clear app data or uninstall the app.</p>
+            <h2>[03] // Advertising &amp; Third Parties</h2>
+            <p>
+              The App contains <strong>zero third-party advertisements</strong> and no commercial marketing trackers.
+              We do not sell, rent, or trade your personal data under any circumstances.
+            </p>
 
-          <h2>7) Children’s Privacy</h2>
-          <p>
-            The App is not directed to children under 13, and we do not knowingly collect personal
-            data from children.
-          </p>
-
-          <h2>8) Changes to This Policy</h2>
-          <p>We may update this policy. Any changes will be reflected in the updated date above.</p>
-
-          <h2>Contact</h2>
-          <p>If you have questions, contact:</p>
-          <p>
-            Rusdy Ahmad <br />
-            Email: rusdyahmad@gmail.com
-            <br />
-            Website: https://rusdy.com/waktusolat
-          </p>
+            <h2>[04] // Contact Operator</h2>
+            <div className="doc-box">
+              <p>For inquiries regarding privacy or compliance:</p>
+              <p style={{ marginTop: "8px" }}>
+                <strong>Rusdy Ahmad</strong><br />
+                Email: <a href="mailto:rusdyahmad@gmail.com" className="acc">rusdyahmad@gmail.com</a>
+              </p>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }

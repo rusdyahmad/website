@@ -24,8 +24,10 @@ export default function WaktuSolat() {
       url: "https://rusdy.com/",
     },
     url: "https://rusdy.com/waktusolat",
-    image: "https://rusdy.com/og.png",
+    image: "https://rusdy.com/assets/waktusolat.jpg",
   };
+
+  const screens = [1, 2, 3, 4];
 
   return (
     <>
@@ -34,173 +36,157 @@ export default function WaktuSolat() {
         description={description}
         path="/waktusolat"
         type="article"
-        image="/projects/waktusolat/splash.jpg"
+        image="/assets/waktusolat.jpg"
         jsonLd={jsonLd}
       />
-      <section className="case-hero reveal">
-        <div className="container case-hero-inner">
-          <div>
-            <p className="eyebrow">Latest project</p>
-            <h1>Waktu Solat</h1>
+
+      {/* Breadcrumb strip */}
+      <div className="back-strip">
+        <Link to="/#work" className="back-link">
+          ← cd .. // return_to_work
+        </Link>
+        <span className="dim">~/projects/waktusolat</span>
+      </div>
+
+      {/* Case Hero */}
+      <section className="case-hero px">
+        <div className="case-hero-inner">
+          <div className="rv">
+            <span className="tag xs up">[06] // case_study · mobile_app</span>
+            <h1>
+              Waktu<br />
+              <span className="o">Solat</span><span className="acc">.</span>
+            </h1>
             <p className="lead">
-              A Malaysia prayer time app built with Expo and React Native. It delivers accurate
-              prayer times, Qiblah direction, reminders, and home-screen widgets that stay in sync.
+              A Malaysia prayer times app built with Expo and React Native. It delivers pinpoint
+              accurate prayer schedules, next-prayer countdown, Qiblah compass, reminders, and
+              home-screen widgets that stay in real-time sync.
             </p>
-            <div className="case-meta">
-              <div>
-                <span className="meta-label">Platform</span>
-                <span className="meta-value">Android + iOS (Expo)</span>
-              </div>
-              <div>
-                <span className="meta-label">Core features</span>
-                <span className="meta-value">Prayer timetable, Qiblah, widgets, notifications</span>
-              </div>
-              <div>
-                <span className="meta-label">Data source</span>
-                <span className="meta-value">Malaysia e-Solat API</span>
-              </div>
+
+            <div className="case-meta-box">
+              <table className="sys">
+                <tbody>
+                  <tr>
+                    <td>PLATFORM</td>
+                    <td>
+                      <span className="ok">Android + iOS</span> (Expo / React Native)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>CORE SPECS</td>
+                    <td>Prayer timetable · Next-prayer countdown · Qiblah finder · Home-screen widgets</td>
+                  </tr>
+                  <tr>
+                    <td>DATA PIPELINE</td>
+                    <td>Official Malaysia e-Solat API with offline caching &amp; background refresh</td>
+                  </tr>
+                  <tr>
+                    <td>STATUS</td>
+                    <td><span className="led"></span><span className="ok">LIVE IN PRODUCTION</span></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+
             <div className="case-actions">
               <a
-                className="btn btn-ghost"
+                className="btn p"
                 href="https://play.google.com/store/apps/details?id=com.waktusolat.rusdyahmad"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{
-                  gap: "10px",
-                  background: "#0b0b0b",
-                  color: "#fff",
-                  borderColor: "#0b0b0b",
-                  width: "100%",
-                  justifyContent: "center",
-                  marginBottom: "10px",
-                }}
               >
-                <svg
-                  aria-hidden="true"
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  role="img"
-                  focusable="false"
-                >
-                  <path d="M4 3.5v17l12.8-8.5L4 3.5z" fill="#00d2ff" />
-                  <path d="M4 3.5l6.8 7-3.1 3.1L4 3.5z" fill="#00f076" />
-                  <path d="M4 20.5l6.8-7-3.1-3.1L4 20.5z" fill="#ffcf3f" />
-                  <path d="M16.8 12l3.2-2.1c.5-.3.5-1 0-1.3L16.8 6 10.8 12l6 6z" fill="#ff5b5b" />
-                </svg>
-                Get it on Google Play
+                get_on_google_play →
               </a>
-            </div>
-            <div className="case-actions">
-              <Link className="btn" to="/">
-                Back to home
+              <Link className="btn btn-ghost" to="/#work">
+                ./all_builds
               </Link>
-              <a className="btn btn-ghost" href="/#work">
-                View all work
-              </a>
             </div>
-            <div className="case-links">
-              <a href="/waktusolat/privacy">Privacy Policy</a>
-              <a href="/waktusolat/terms">Terms of Service</a>
-              <a href="/waktusolat/support">Support</a>
+
+            <div className="case-sublinks">
+              <span className="dim">docs:</span>
+              <Link to="/waktusolat/privacy">Privacy Policy</Link>
+              <Link to="/waktusolat/terms">Terms of Service</Link>
+              <Link to="/waktusolat/support">Support</Link>
             </div>
           </div>
-          <div className="case-media">
-            <img src="/projects/waktusolat/icon.png" alt="Waktu Solat app icon" loading="lazy" />
+
+          <div className="case-hero-media rv">
+            <div className="shot contain" style={{ "--tint": "#2F7D3A" }}>
+              <img
+                src="/assets/waktusolat.jpg"
+                alt="Waktu Solat app icon"
+                style={{ objectPosition: "center" }}
+              />
+              <span className="hud"></span>
+              <span className="lbl">/waktusolat</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="case-section reveal">
-        <div className="container case-grid">
-          <div className="case-card">
-            <h2>What I built</h2>
-            <ul>
-              <li>Prayer time schedule with next prayer countdown and daily timetable.</li>
-              <li>Qiblah finder with compass calibration and on-device heading.</li>
-              <li>Home-screen widgets for quick glance updates every 15 minutes.</li>
-              <li>Notification scheduling for key prayer times.</li>
-            </ul>
-          </div>
-          <div className="case-card">
-            <h2>Technical highlights</h2>
-            <ul>
-              <li>Expo + React Native app with localized Malay/English labels.</li>
-              <li>Widget data pipeline that syncs app data to Android and iOS widgets.</li>
-              <li>Location-based zone handling and Hijri date display.</li>
-              <li>API-driven updates using the official e-Solat endpoint.</li>
-            </ul>
-          </div>
+      {/* Case Details Grid */}
+      <section className="case-grid">
+        <div className="case-card rv">
+          <span className="tag xs up">[01] // scope_delivery</span>
+          <h3 style={{ marginTop: "12px" }}>What I built</h3>
+          <ul>
+            <li>Prayer time schedule with next prayer countdown and daily timetable.</li>
+            <li>Qiblah direction finder with digital compass calibration and smooth gyro heading.</li>
+            <li>Home-screen widgets for quick glance updates every 15 minutes.</li>
+            <li>Notification scheduling and azan audio triggers for daily prayer times.</li>
+            <li>Zone picker supporting all Malaysian states and federal territories.</li>
+          </ul>
+        </div>
+        <div className="case-card rv">
+          <span className="tag xs up">[02] // engineering</span>
+          <h3 style={{ marginTop: "12px" }}>Technical highlights</h3>
+          <ul>
+            <li>Expo + React Native architecture with localized Malay and English labels.</li>
+            <li>Widget data pipeline that syncs app state seamlessly to Android and iOS widgets.</li>
+            <li>GPS-assisted zone auto-detection and Hijri lunar date calculations.</li>
+            <li>Resilient API-driven updates using the official JAKIM e-Solat endpoint.</li>
+            <li>Lightweight bundle with instant cold-start time and minimal battery consumption.</li>
+          </ul>
         </div>
       </section>
 
-      <section className="case-section reveal">
-        <div className="container case-stack">
-          <div>
-            <p className="eyebrow">Stack</p>
-            <h2>Expo + React Native, built for production</h2>
-          </div>
-          <div className="case-tags">
-            <span className="tag">Expo</span>
-            <span className="tag">React Native</span>
-            <span className="tag">Notifications</span>
-            <span className="tag">Widgets</span>
-            <span className="tag">Location</span>
-          </div>
+      {/* Stack Section */}
+      <section className="case-stack-sec px rv">
+        <div>
+          <span className="tag xs up">{"// stack_architecture"}</span>
+          <h4 style={{ marginTop: "8px" }}>Expo + React Native, built for accuracy and widgets</h4>
+        </div>
+        <div className="chips">
+          <span className="chip">Expo</span>
+          <span className="chip">React Native</span>
+          <span className="chip">iOS Widgets</span>
+          <span className="chip">Android Widgets</span>
+          <span className="chip">Compass API</span>
+          <span className="chip">Notifications</span>
         </div>
       </section>
 
-      <section className="case-section reveal">
-        <div className="container">
-          <div className="section-head">
-            <p className="eyebrow">Screens</p>
-            <h2>Waktu Solat in action</h2>
-          </div>
-          <div className="phone-grid">
-            {[1, 2, 3, 4].map((num) => (
-              <div className="phone-shot" key={num}>
+      {/* Screen Gallery */}
+      <section className="gallery-sec px">
+        <div className="sh" style={{ paddingTop: 0, paddingBottom: "24px" }}>
+          <span className="tag xs up">{"// interface_telemetry"}</span>
+          <h2 className="rv">App screens <span className="o">in action.</span></h2>
+          <span className="xs up dim right">04 captures</span>
+        </div>
+        <div className="gallery-grid">
+          {screens.map((num) => (
+            <div className="gallery-item rv" key={num}>
+              <div className="shot">
                 <img
                   src={`/projects/waktusolat/${num}.png`}
-                  alt={`Waktu Solat screen ${num}`}
+                  alt={`Waktu Solat interface capture 0${num}`}
                   loading="lazy"
                 />
+                <span className="hud"></span>
+                <span className="lbl">screen_0{num}.png</span>
               </div>
-            ))}
-          </div>
-          <div className="case-actions" style={{ marginTop: "48px" }}>
-            <a
-              className="btn btn-ghost"
-              href="https://play.google.com/store/apps/details?id=com.waktusolat.rusdyahmad"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                gap: "10px",
-                background: "#0b0b0b",
-                color: "#fff",
-                borderColor: "#0b0b0b",
-                width: "100%",
-                maxWidth: "360px",
-                margin: "0 auto",
-                justifyContent: "center",
-              }}
-            >
-              <svg
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                width="20"
-                height="20"
-                role="img"
-                focusable="false"
-              >
-                <path d="M4 3.5v17l12.8-8.5L4 3.5z" fill="#00d2ff" />
-                <path d="M4 3.5l6.8 7-3.1 3.1L4 3.5z" fill="#00f076" />
-                <path d="M4 20.5l6.8-7-3.1-3.1L4 20.5z" fill="#ffcf3f" />
-                <path d="M16.8 12l3.2-2.1c.5-.3.5-1 0-1.3L16.8 6 10.8 12l6 6z" fill="#ff5b5b" />
-              </svg>
-              Get it on Google Play
-            </a>
-          </div>
+            </div>
+          ))}
         </div>
       </section>
     </>

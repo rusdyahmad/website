@@ -19,7 +19,7 @@ export default function GadgetOps() {
       url: "https://rusdy.com/",
     },
     url: "https://rusdy.com/gadget-ops",
-    image: "https://rusdy.com/og.png",
+    image: "https://rusdy.com/assets/gadgetops.jpg",
   };
 
   return (
@@ -29,171 +29,154 @@ export default function GadgetOps() {
         description={description}
         path="/gadget-ops"
         type="article"
-        image="/projects/gadget-ops/gadget.png"
+        image="/assets/gadgetops.jpg"
         jsonLd={jsonLd}
       />
-      <section className="case-hero reveal">
-        <div className="container case-hero-inner">
-          <div>
-            <p className="eyebrow">Featured project</p>
-            <h1>Gadget Ops</h1>
+
+      {/* Breadcrumb strip */}
+      <div className="back-strip">
+        <Link to="/#work" className="back-link">
+          ← cd .. // return_to_work
+        </Link>
+        <span className="dim">~/projects/gadget-ops</span>
+      </div>
+
+      {/* Case Hero */}
+      <section className="case-hero px">
+        <div className="case-hero-inner">
+          <div className="rv">
+            <span className="tag xs up">[08] // case_study · operations_platform</span>
+            <h1>
+              Gadget<br />
+              <span className="o">Ops</span><span className="acc">.</span>
+            </h1>
             <p className="lead">
-              A unified operations hub for product inventory, serial tracking, multi-channel orders,
-              affiliate commissions, warranty workflows, and analytics.
+              A unified back-office suite engineered for multi-channel gadget retailers.
+              Gadget Ops connects product inventory, IMEI/serial number tracking, multi-channel marketplace orders
+              (Shopee, TikTok, Sini), affiliate commission trees, and end-to-end warranty claim workflows.
             </p>
-            <div className="case-meta">
-              <div>
-                <span className="meta-label">Platform</span>
-                <span className="meta-value">Web app for internal teams + affiliates</span>
-              </div>
-              <div>
-                <span className="meta-label">Core modules</span>
-                <span className="meta-value">
-                  Products, serials, orders, affiliates, warranty, reports
-                </span>
-              </div>
-              <div>
-                <span className="meta-label">Integrations</span>
-                <span className="meta-value">Shopee, TikTok, Sini, BayarCash, EasyParcel</span>
-              </div>
+
+            <div className="case-meta-box">
+              <table className="sys">
+                <tbody>
+                  <tr>
+                    <td>PLATFORM</td>
+                    <td>
+                      <span className="ok">Web application</span> for internal operations + affiliates
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>CORE MODULES</td>
+                    <td>Products · Serials &amp; IMEIs · Multi-channel orders · Affiliates · Warranty claims · Reports</td>
+                  </tr>
+                  <tr>
+                    <td>INTEGRATIONS</td>
+                    <td>Shopee Open API · TikTok Shop API · SINI · BayarCash · EasyParcel</td>
+                  </tr>
+                  <tr>
+                    <td>MY ROLE</td>
+                    <td>Full-stack product developer — architecture, database design, queue pipelines, UI</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+
             <div className="case-actions">
               <a
-                className="btn"
+                className="btn p"
                 href="https://app.gadget.com.my/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Visit app
+                visit_app ↗
               </a>
-              <Link className="btn btn-ghost" to="/">
-                Back to home
+              <Link className="btn btn-ghost" to="/#work">
+                ./all_builds
               </Link>
             </div>
           </div>
-          <div className="case-media">
-            <img src="/projects/gadget-ops/gadget.png" alt="Gadget Ops preview" loading="lazy" />
-          </div>
-        </div>
-      </section>
 
-      <section className="case-section reveal">
-        <div className="container case-grid">
-          <div className="case-card">
-            <h2>Problem</h2>
-            <p>
-              Orders, serials, affiliates, and warranty flows lived in separate tools, making it
-              hard to track fulfillment, commissions, and post-sale support at scale.
-            </p>
-          </div>
-          <div className="case-card">
-            <h2>Solution</h2>
-            <p>
-              A single operations suite that connects inventory, marketplace orders, payments, and
-              warranty workflows, with dashboards that surface what needs action fast.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="case-section reveal">
-        <div className="container">
-          <div className="section-head">
-            <p className="eyebrow">Capabilities</p>
-            <h2>What it does</h2>
-          </div>
-          <div className="case-grid">
-            <div className="case-card">
-              <h3>Inventory + Serials</h3>
-              <p>Track products, variants, and serial assignments with exports and audits.</p>
-            </div>
-            <div className="case-card">
-              <h3>Multi-channel Orders</h3>
-              <p>Sync and manage orders from Shopee, TikTok, Sini, and manual entries.</p>
-            </div>
-            <div className="case-card">
-              <h3>Affiliate Operations</h3>
-              <p>Manage affiliate profiles, referral trees, and commission payouts.</p>
-            </div>
-            <div className="case-card">
-              <h3>Warranty Workflow</h3>
-              <p>Handle warranty registration, claims, media uploads, and status tracking.</p>
-            </div>
-            <div className="case-card">
-              <h3>Reporting</h3>
-              <p>Stock, sales, SKU, and order reporting with exports for accounting.</p>
-            </div>
-            <div className="case-card">
-              <h3>Payments + Shipping</h3>
-              <p>BayarCash payment flows and EasyParcel shipping status automation.</p>
+          <div className="case-hero-media rv">
+            <div className="shot">
+              <img src="/assets/gadgetops.jpg" alt="Gadget Ops dashboard screenshot" />
+              <span className="hud"></span>
+              <span className="lbl">/gadget-ops</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="case-section reveal">
-        <div className="container case-grid">
-          <div className="case-card">
-            <h2>Who it&apos;s for</h2>
-            <p>
-              Operations teams running multi-channel gadget sales who need tight control over
-              inventory, fulfillment, and post-sale support.
-            </p>
+      {/* Problem / Solution Grid */}
+      <section className="case-grid">
+        <div className="case-card rv">
+          <span className="tag xs up">[01] // operational_bottlenecks</span>
+          <h3 style={{ marginTop: "12px" }}>The challenge</h3>
+          <p className="mid" style={{ marginBottom: "16px" }}>
+            As order volume surged across Shopee, TikTok Shop, and offline direct sales,
+            serial numbers were logged manually, affiliate commissions were tracked in disjointed spreadsheets,
+            and warranty verification took hours per customer inquiry.
+          </p>
+          <ul>
+            <li>High error rates in matching shipped hardware to IMEI/serial numbers.</li>
+            <li>Lack of real-time commission calculation across tiered affiliate networks.</li>
+            <li>No customer self-service warranty lookup or digital claim status updates.</li>
+          </ul>
+        </div>
+        <div className="case-card rv">
+          <span className="tag xs up">[02] // automated_orchestration</span>
+          <h3 style={{ marginTop: "12px" }}>The platform</h3>
+          <p className="mid" style={{ marginBottom: "16px" }}>
+            A single, consolidated operations hub that automatically ingests orders via webhooks,
+            binds serials during packing, calculates affiliate payouts, and manages the lifecycle of customer warranty claims.
+          </p>
+          <ul>
+            <li>Automated webhook ingestion with worker queues for 100% order capture.</li>
+            <li>Barcode/scanner support for zero-error serial tagging during packaging.</li>
+            <li>Audited financial reporting and instant CSV exports for reconciliation.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Capabilities */}
+      <section className="sec px" style={{ paddingBottom: "48px" }}>
+        <div className="sh" style={{ paddingTop: "48px", paddingBottom: "24px" }}>
+          <span className="tag xs up">{"// operational_modules"}</span>
+          <h2 className="rv">Engineered <span className="o">subsystems.</span></h2>
+          <span className="xs up dim right">06 modules</span>
+        </div>
+        <div className="svc" style={{ borderTop: "1px solid var(--line)" }}>
+          <div className="rv">
+            <span className="path">~/modules/serials</span>
+            <h4 style={{ fontSize: "22px", margin: "24px 0 10px" }}>Inventory &amp; Serials</h4>
+            <p>Granular tracking of hardware units by serial number from supplier delivery to customer doorstep.</p>
           </div>
-          <div className="case-card">
-            <h2>My role</h2>
-            <p>
-              Full-stack product developer — architecture, data modeling, integrations, and the
-              Inertia + Vue UI.
-            </p>
+          <div className="rv">
+            <span className="path">~/modules/sync</span>
+            <h4 style={{ fontSize: "22px", margin: "24px 0 10px" }}>Marketplace Sync</h4>
+            <p>Unified queue workers syncing orders and status updates across Shopee, TikTok, and direct channels.</p>
+          </div>
+          <div className="rv">
+            <span className="path">~/modules/warranty</span>
+            <h4 style={{ fontSize: "22px", margin: "24px 0 10px" }}>Warranty &amp; RMA</h4>
+            <p>Self-serve customer warranty registration, claim verification, photo proof, and repair logs.</p>
           </div>
         </div>
       </section>
 
-      <section className="case-section reveal">
-        <div className="container case-grid">
-          <div className="case-card">
-            <h2>Key work</h2>
-            <ul>
-              <li>Built marketplace order ingestion with webhook handling and sync jobs.</li>
-              <li>Shipped serial tracking, warranty registration, and claim management flows.</li>
-              <li>Delivered affiliate tools, commission logic, and payout operations.</li>
-              <li>Created reporting exports for sales, stock, and multi-quantity orders.</li>
-              <li>Integrated BayarCash payments and EasyParcel shipping status.</li>
-            </ul>
-          </div>
-          <div className="case-card">
-            <h2>Outcomes</h2>
-            <ul>
-              <li>Single source of truth across sales channels.</li>
-              <li>Faster order handling with automated sync and serial mapping.</li>
-              <li>Clear warranty and affiliate visibility for support teams.</li>
-            </ul>
-          </div>
+      {/* Stack Section */}
+      <section className="case-stack-sec px rv">
+        <div>
+          <span className="tag xs up">{"// stack_architecture"}</span>
+          <h4 style={{ marginTop: "8px" }}>Laravel + Inertia + Vue + MySQL, high-volume queues</h4>
         </div>
-      </section>
-
-      <section className="case-section reveal">
-        <div className="container case-stack">
-          <div>
-            <p className="eyebrow">Stack</p>
-            <h2>Laravel + Inertia + Vue, built for operations</h2>
-          </div>
-          <div className="case-tags">
-            <span className="tag">Laravel</span>
-            <span className="tag">Inertia.js</span>
-            <span className="tag">Vue</span>
-            <span className="tag">Vite</span>
-            <span className="tag">MySQL</span>
-            <span className="tag">Queues</span>
-          </div>
-        </div>
-      </section>
-
-      <section className="case-section reveal">
-        <div className="container case-cta">
-          <h2>Need a system that keeps ops tight?</h2>
-          <p className="lead">Let&apos;s build it.</p>
+        <div className="chips">
+          <span className="chip">Laravel</span>
+          <span className="chip">Inertia.js</span>
+          <span className="chip">Vue</span>
+          <span className="chip">MySQL</span>
+          <span className="chip">Redis Queues</span>
+          <span className="chip">REST APIs</span>
+          <span className="chip">Webhooks</span>
         </div>
       </section>
     </>

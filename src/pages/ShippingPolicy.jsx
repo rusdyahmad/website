@@ -1,73 +1,75 @@
+import { Link } from "react-router-dom";
 import SEO from "../components/SEO.jsx";
 
 export default function ShippingPolicy() {
-  const title = "RA — Shipping Policy";
+  const title = "RA — Shipping & Delivery Policy";
   const description =
     "Shipping and delivery policy for RA full-stack development services and digital deliverables.";
 
   return (
     <>
       <SEO title={title} description={description} path="/shipping-policy" type="article" />
-      <section className="legal reveal">
-        <div className="container legal-content">
-          <a className="btn btn-ghost back-link" href="/">
-            <span className="back-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="img" focusable="false">
-                <path
-                  d="M15 6l-6 6 6 6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </span>
-            Back to home
-          </a>
-          <p className="eyebrow">Policy</p>
-          <h1>Shipping Policy</h1>
-          <p className="lead">Last updated: January 20, 2026</p>
 
-          <p>
-            RA provides digital services and delivers work electronically. No physical products are
-            shipped unless explicitly agreed in writing.
-          </p>
+      <div className="back-strip">
+        <Link to="/" className="back-link">
+          ← cd .. // return_to_home
+        </Link>
+        <span className="dim">~/legal/shipping-policy</span>
+      </div>
 
-          <h2>1) Delivery method</h2>
-          <p>
-            Deliverables are shared through email, shared repositories, file transfers, or project
-            management tools as agreed in the project scope.
-          </p>
+      <div className="term-doc-page px">
+        <div className="doc-frame">
+          <div className="doc-header">
+            <span className="tag xs up">[SYS] // fulfillment_policy</span>
+            <h1>Delivery Policy</h1>
+            <div className="doc-meta">
+              <span>Entity: <b>Bina Aset Digital (201703444188)</b></span>
+              <span>Updated: <b>January 20, 2026</b></span>
+              <span>Format: <b className="ok">100% ELECTRONIC / ZERO FREIGHT</b></span>
+            </div>
+          </div>
 
-          <h2>2) Delivery timeline</h2>
-          <p>
-            Timelines are defined in each proposal or statement of work. Typical projects are
-            completed within 2 to 4 weeks, depending on scope and feedback cycles.
-          </p>
+          <div className="doc-body">
+            <p className="lead" style={{ fontSize: "16px", color: "var(--fg)" }}>
+              RA provides software engineering, cloud infrastructure deployment, and digital product consulting.
+              All project assets and deliverables are transmitted and provisioned electronically.
+            </p>
 
-          <h2>3) Acceptance and revisions</h2>
-          <p>
-            Each milestone includes a review window to confirm requirements are met. Revisions are
-            handled according to the project scope and timeline.
-          </p>
+            <h2>[01] // Electronic Delivery Protocol</h2>
+            <p>
+              Deliverables are provided via Git version control repositories (GitHub, GitLab), private artifact registries,
+              direct cloud container deployments, or secure encrypted archives as stipulated in the project statement of work.
+            </p>
 
-          <h2>4) Physical shipping (if applicable)</h2>
-          <p>
-            If a project requires any physical materials, shipping arrangements and costs must be
-            approved in writing before dispatch.
-          </p>
+            <h2>[02] // Delivery Timelines</h2>
+            <p>
+              Milestone delivery schedules are detailed in each engineering contract. Typical full-stack sprint deliverables
+              are deployed to staging environments on a bi-weekly cadence with continuous integration checks.
+            </p>
 
-          <h2>Contact</h2>
-          <p>
-            Questions about delivery can be sent to:
-            <br />
-            Rusdy Ahmad
-            <br />
-            Email: rusdyahmad@gmail.com
-          </p>
+            <h2>[03] // Acceptance &amp; Production Sign-off</h2>
+            <p>
+              Upon delivery to the staging environment or repository pull request, clients have a defined review window (typically 5 to 7 business days)
+              to verify deliverables against acceptance criteria.
+            </p>
+
+            <h2>[04] // Physical Hardware (Exceptions Only)</h2>
+            <p>
+              In specialized IoT or hardware deployment engagements where physical microcontrollers, sensors, or point-of-sale terminals
+              are required, courier arrangements, customs documentation, and insured freight will be itemized separately in writing prior to dispatch.
+            </p>
+
+            <h2>[05] // Direct Contact</h2>
+            <div className="doc-box">
+              <p>For delivery coordination or repository permissions:</p>
+              <p style={{ marginTop: "8px" }}>
+                <strong>RA / Bina Aset Digital</strong><br />
+                Email: <a href="mailto:me@rusdy.com" className="acc">me@rusdy.com</a>
+              </p>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }
