@@ -33,6 +33,20 @@ const workItems = [
   },
   {
     num: "03",
+    title: "Masjid.org.my",
+    category: "Smart TV & digital signage",
+    description:
+      "Digital signage and smart TV prayer timetable system for mosques and suraus across Malaysia. Transforms any Android TV into an automated display with e-Solat JAKIM synchronization, Hijri calendar, hadith, announcements, and live lecture streaming via WebRTC.",
+    chips: ["e-solat jakim", "smart tv", "digital signage", "webrtc live"],
+    href: "https://masjid.org.my",
+    linkLabel: "visit masjid.org.my ↗",
+    image: "/assets/masjid.png",
+    tint: "#065F46",
+    lbl: "masjid.org.my",
+    isExternal: true,
+  },
+  {
+    num: "04",
     title: "RASUK",
     category: "Social network",
     description:
@@ -46,7 +60,7 @@ const workItems = [
     isExternal: true,
   },
   {
-    num: "04",
+    num: "05",
     title: "eDesa",
     category: "E-commerce marketplace",
     description:
@@ -60,7 +74,7 @@ const workItems = [
     isExternal: true,
   },
   {
-    num: "05",
+    num: "06",
     title: "Barakat Makkiyyah",
     category: "Mobile app",
     description:
@@ -75,7 +89,7 @@ const workItems = [
     isExternal: false,
   },
   {
-    num: "06",
+    num: "07",
     title: "Waktu Solat",
     category: "Mobile app",
     description:
@@ -90,7 +104,7 @@ const workItems = [
     isExternal: false,
   },
   {
-    num: "07",
+    num: "08",
     title: "SINI",
     category: "Sales platform",
     description:
@@ -103,7 +117,7 @@ const workItems = [
     isExternal: false,
   },
   {
-    num: "08",
+    num: "09",
     title: "Gadget Ops",
     category: "Operations platform",
     description:
@@ -116,7 +130,7 @@ const workItems = [
     isExternal: false,
   },
   {
-    num: "09",
+    num: "10",
     title: "XBOSS",
     category: "Digital marketplace",
     description:
@@ -171,7 +185,7 @@ export default function Home() {
     whoami:
       "RA — full-stack coder. 20+ yrs on the web, 100+ projects shipped.\ncore: go (api) · next.js (web) · flutter (mobile)\nalso: laravel · inertia · react · expo",
     "ls work":
-      "rekood/              ai receipts · ios · android · web\nsimplemobile/        tiktok shop · telco ops · esim\nrasuk/               social · live streaming · no algorithm\nedesa/               marketplace · local smes\nbarakat-makkiyyah/   mobile · offline · audio\nwaktusolat/          mobile · widgets\nsini/                checkout · forms · dashboard\ngadget-ops/          orders · integrations · warranty\nxboss/               marketplace · esim · gaming",
+      "rekood/              ai receipts · ios · android · web\nsimplemobile/        tiktok shop · telco ops · esim\nmasjid/              smart tv · digital signage · e-solat\nrasuk/               social · live streaming · no algorithm\nedesa/               marketplace · local smes\nbarakat-makkiyyah/   mobile · offline · audio\nwaktusolat/          mobile · widgets\nsini/                checkout · forms · dashboard\ngadget-ops/          orders · integrations · warranty\nxboss/               marketplace · esim · gaming",
     stack:
       "CORE\n  api    go\n  web    next.js\n  mobile flutter\n  db     postgres, mysql\nALSO\n  laravel · inertia · react · expo",
     status: "● OPEN FOR Q1 — 2 slots available. avg response < 24h.",
@@ -379,7 +393,9 @@ export default function Home() {
           <h2 className="rv">
             Recent builds <span className="o">with punch.</span>
           </h2>
-          <span className="xs up dim right">09 entries</span>
+          <span className="xs up dim right">
+            {workItems.length < 10 ? `0${workItems.length}` : workItems.length} entries
+          </span>
         </div>
 
         {workItems.map((item) => (
