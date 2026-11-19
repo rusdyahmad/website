@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home.jsx";
+import Domains from "./pages/Domains.jsx";
 import GadgetOps from "./pages/GadgetOps.jsx";
 import Sini from "./pages/Sini.jsx";
 import BarakatMakkiyyah from "./pages/BarakatMakkiyyah.jsx";
@@ -22,6 +23,7 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="domains" element={<Domains />} />
         <Route path="gadget-ops" element={<GadgetOps />} />
         <Route path="sini" element={<Sini />} />
         <Route path="barakat-makkiyyah" element={<BarakatMakkiyyah />} />

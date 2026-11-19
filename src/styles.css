@@ -1048,6 +1048,12 @@ footer.term-footer a:hover {
 }
 
 /* ---------- Domain portfolio ---------- */
+.domain-section h1 {
+  font-size: clamp(40px, 6vw, 96px);
+  line-height: .88;
+  letter-spacing: -.015em;
+}
+
 .domain-intro {
   max-width: 76ch;
   margin: 0 0 32px;

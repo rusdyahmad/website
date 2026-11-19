@@ -4,6 +4,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const routes = [
   "/",
+  "/domains",
   "/sini",
   "/gadget-ops",
   "/barakat-makkiyyah",

@@ -42,9 +42,9 @@ export default function SiteHeader() {
             <a href={isHome ? "#work" : "/#work"}>
               <b>01</b>Work
             </a>
-            <a href={isHome ? "#domains" : "/#domains"}>
+            <Link to="/domains">
               <b>MY</b>Domains
-            </a>
+            </Link>
             <a href={isHome ? "#services" : "/#services"}>
               <b>02</b>Services
             </a>
@@ -74,9 +74,9 @@ export default function SiteHeader() {
           <a href={isHome ? "#work" : "/#work"} onClick={closeMobile}>
             01 // Work
           </a>
-          <a href={isHome ? "#domains" : "/#domains"} onClick={closeMobile}>
+          <Link to="/domains" onClick={closeMobile}>
             MY // Domains for sale
-          </a>
+          </Link>
           <a href={isHome ? "#services" : "/#services"} onClick={closeMobile}>
             02 // Services
           </a>
