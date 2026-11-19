@@ -43,6 +43,42 @@ const domainItems = [
     description: "A welcoming name for local discovery, a neighbourhood hub, or a new destination.",
     illustration: "An orange location pin among village homes, palms, and winding paths",
   },
+  {
+    name: "sepak.my",
+    meaning: "Kick off something great.",
+    description: "A sharp, memorable name for football news, a fan community, or a football brand.",
+    illustration: "A football boot striking a ball above a sweeping green football pitch",
+  },
+  {
+    name: "algoritma.my",
+    meaning: "Built on smart ideas.",
+    description: "A distinctive name for software, AI, coding education, or a technology studio.",
+    illustration: "Branching geometric nodes, connected logic blocks, and an abstract computer chip",
+  },
+  {
+    name: "keropok.my",
+    meaning: "A familiar crunch.",
+    description: "A deliciously local name for a keropok brand, snack shop, or Malaysian food business.",
+    illustration: "A bowl of golden Malaysian fish crackers in a warm food still life",
+  },
+  {
+    name: "patin.my",
+    meaning: "Fresh from the river.",
+    description: "A short, recognisable name for freshwater fish, aquaculture, or a local food destination.",
+    illustration: "A silver patin fish swimming through blue river curves and tropical leaves",
+  },
+  {
+    name: "janda.my",
+    meaning: "A new chapter, your way.",
+    description: "A memorable Malay name for a community, personal stories, or a lifestyle publication.",
+    illustration: "A confident woman wearing a hijab beside a flowering branch in warm plum and rose",
+  },
+  {
+    name: "sekarang.my",
+    meaning: "The moment is now.",
+    description: "An action-ready name for timely news, on-demand services, or everyday discovery.",
+    illustration: "A bold clock, a rising sun, and flowing arcs that evoke the present moment",
+  },
 ];
 
 export default function Domains() {
@@ -50,7 +86,7 @@ export default function Domains() {
     <>
       <SEO
         title=".my Domains for Sale — RA/SYS"
-        description="Explore tenang.my, seluar.my, kopiah.my, borak.my, sukan.my, reda.my, and sini.my. Memorable Malaysian domains available for sale. Enquire directly to discuss an offer."
+        description="Explore memorable Malaysian .my domains for sale, including sepak.my, algoritma.my, keropok.my, patin.my, janda.my, and sekarang.my. Enquire directly to discuss an offer."
         path="/domains"
       />
       <section className="sec domain-section" id="domains" aria-labelledby="domains-title" data-screen-label="Domains for sale">
