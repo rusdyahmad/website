@@ -1097,6 +1097,10 @@ footer.term-footer a:hover {
   border: 1px solid var(--line-2);
 }
 
+.domain-sale--reserved {
+  color: var(--fg-2);
+}
+
 .domain-info {
   display: flex;
   flex-direction: column;

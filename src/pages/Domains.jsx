@@ -79,17 +79,24 @@ const domainItems = [
     description: "An action-ready name for timely news, on-demand services, or everyday discovery.",
     illustration: "A bold clock, a rising sun, and flowing arcs that evoke the present moment",
   },
+  {
+    name: "quran.my",
+    meaning: "A place for reflection.",
+    description: "A dedicated name for the Quran, learning, and reflection. This domain is not for sale.",
+    illustration: "A Quran resting on a wooden rehal beneath an emerald and gold arch",
+    forSale: false,
+  },
 ];
 
 export default function Domains() {
   return (
     <>
       <SEO
-        title=".my Domains for Sale — RA/SYS"
-        description="Explore memorable Malaysian .my domains for sale, including sepak.my, algoritma.my, keropok.my, patin.my, janda.my, and sekarang.my. Enquire directly to discuss an offer."
+        title=".my Domain Portfolio — RA/SYS"
+        description="Explore a collection of memorable Malaysian .my domains. Selected domains are available for sale; quran.my is not for sale."
         path="/domains"
       />
-      <section className="sec domain-section" id="domains" aria-labelledby="domains-title" data-screen-label="Domains for sale">
+      <section className="sec domain-section" id="domains" aria-labelledby="domains-title" data-screen-label="Domain portfolio">
         <div className="sh px">
           <span className="tag xs up">[MY] // domain_portfolio</span>
           <h1 id="domains-title">
@@ -98,8 +105,8 @@ export default function Domains() {
           <span className="xs up dim right">{String(domainItems.length).padStart(2, "0")} domains</span>
         </div>
         <p className="domain-intro px">
-          A collection of memorable .my domains, available for sale. Find a name
-          for your next idea and get in touch to discuss an offer.
+          A collection of memorable .my domains. Selected names are available for sale;
+          check each card for availability and get in touch to discuss an offer.
         </p>
         <div className="domain-grid">
           {domainItems.map((domain) => (
@@ -112,19 +119,23 @@ export default function Domains() {
                   height="960"
                   loading="lazy"
                 />
-                <span className="domain-sale xs up">For sale</span>
+                <span className={`domain-sale xs up${domain.forSale === false ? " domain-sale--reserved" : ""}`}>
+                  {domain.forSale === false ? "Not for sale" : "For sale"}
+                </span>
               </div>
               <div className="domain-info">
                 <h3>{domain.name}</h3>
                 <p className="domain-meaning">{domain.meaning}</p>
                 <p>{domain.description}</p>
-                <a
-                  className="domain-enquire"
-                  href={`mailto:me@rusdy.com?subject=${encodeURIComponent(`Domain enquiry: ${domain.name}`)}`}
-                  aria-label={`Enquire to buy ${domain.name}`}
-                >
-                  Enquire to buy <span aria-hidden="true">↗</span>
-                </a>
+                {domain.forSale !== false && (
+                  <a
+                    className="domain-enquire"
+                    href={`mailto:me@rusdy.com?subject=${encodeURIComponent(`Domain enquiry: ${domain.name}`)}`}
+                    aria-label={`Enquire to buy ${domain.name}`}
+                  >
+                    Enquire to buy <span aria-hidden="true">↗</span>
+                  </a>
+                )}
               </div>
             </article>
           ))}
